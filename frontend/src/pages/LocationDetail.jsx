@@ -6,6 +6,7 @@ import { useDocumentTitle } from '../hooks/useDocumentTitle'
 import ContactList from '../features/locations/ContactList'
 import DojoMap from '../features/locations/DojoMap'
 import InstructorGrid from '../features/instructors/InstructorGrid'
+import { instructorsFor } from '../features/instructors/pick'
 import ScheduleTabs from '../features/schedule/ScheduleTabs'
 import ScheduleGrid from '../features/schedule/ScheduleGrid'
 import PlanCard from '../features/pricing/PlanCard'
@@ -13,60 +14,6 @@ import NotFound from './NotFound'
 import { DefaultCta } from './CtaBand'
 import styles from '../features/locations/locations.module.css'
 import pricingStyles from '../features/pricing/pricing.module.css'
-
-/**
- * Schedule for one sala. Art Dojo teaches four disciplines and gets a
- * discipline selector; the Aikido-only dojos show everything at once.
- */
-function LocationSchedule({ location, data, lookups }) {
-  const entries = useMemo(
-    () => data.schedule.filter((entry) => entry.locationId === location.id),
-    [data.schedule, location.id],
-  )
-
-  const disciplines = useMemo(() => {
-    const ids = new Set(entries.map((entry) => entry.disciplineId))
-    return data.disciplines.filter((discipline) => ids.has(discipline.id))
-  }, [entries, data.disciplines])
-
-  const [disciplineId, setDisciplineId] = useState(null)
-
-  if (entries.length === 0) return null
-
-  const multi = disciplines.length > 1
-  const active = disciplines.some((d) => d.id === disciplineId) ? disciplineId : null
-  const visible = active ? entries.filter((entry) => entry.disciplineId === active) : entries
-
-  return (
-    <Section tight>
-      <Container>
-        <SectionHeading
-          kicker="Program"
-          title="Orar"
-          lede={multi ? 'Alege disciplina.' : undefined}
-        />
-
-        {multi && (
-          <ScheduleTabs
-            items={[
-              { id: null, name: 'Toate', sub: `${entries.length} clase` },
-              ...disciplines.map((discipline) => ({
-                id: discipline.id,
-                name: discipline.name,
-                sub: `${entries.filter((e) => e.disciplineId === discipline.id).length} clase`,
-              })),
-            ]}
-            value={active}
-            onChange={setDisciplineId}
-            label="Alege disciplina"
-          />
-        )}
-
-        <ScheduleGrid entries={visible} days={data.days} lookups={lookups} />
-      </Container>
-    </Section>
-  )
-}
 
 export default function LocationDetail() {
   const { slug } = useParams()
@@ -78,13 +25,35 @@ export default function LocationDetail() {
     [data.locations, slug],
   )
 
+  const entries = useMemo(
+    () => (location ? data.schedule.filter((e) => e.locationId === location.id) : []),
+    [data.schedule, location],
+  )
+
+  // Disciplines actually taught in this sala.
+  const disciplines = useMemo(() => {
+    const ids = new Set(entries.map((entry) => entry.disciplineId))
+    return data.disciplines.filter((discipline) => ids.has(discipline.id))
+  }, [entries, data.disciplines])
+
+  const [disciplineId, setDisciplineId] = useState(null)
+
   useDocumentTitle(location?.name)
 
   if (!location) return <NotFound />
 
-  const entries = data.schedule.filter((entry) => entry.locationId === location.id)
+  const multi = disciplines.length > 1
+  const active = disciplines.some((d) => d.id === disciplineId) ? disciplineId : null
+  const visible = active ? entries.filter((entry) => entry.disciplineId === active) : entries
+
+  // The discipline selection narrows the instructor list too.
+  const instructors = instructorsFor(data.instructors, data.schedule, {
+    locationId: location.id,
+    disciplineId: active,
+  })
+
   const pricing = data.pricing.find((group) => group.locationId === location.id)
-  const instructors = data.instructors.filter((person) => person.dojos.includes(location.id))
+  const activeName = active ? lookups.disciplineById[active]?.name : null
 
   return (
     <>
@@ -120,9 +89,49 @@ export default function LocationDetail() {
         </Container>
       </header>
 
-      <LocationSchedule location={location} data={data} lookups={lookups} />
+      {entries.length > 0 && (
+        <Section tight>
+          <Container>
+            <SectionHeading
+              kicker="Program"
+              title="Orar"
+              lede={multi ? 'Alege disciplina.' : undefined}
+            />
 
-      <Section tight alt>
+            {multi && (
+              <ScheduleTabs
+                items={[
+                  { id: null, name: 'Toate', sub: `${entries.length} clase` },
+                  ...disciplines.map((discipline) => ({
+                    id: discipline.id,
+                    name: discipline.name,
+                    sub: `${entries.filter((e) => e.disciplineId === discipline.id).length} clase`,
+                  })),
+                ]}
+                value={active}
+                onChange={setDisciplineId}
+                label="Alege disciplina"
+              />
+            )}
+
+            <ScheduleGrid entries={visible} days={data.days} lookups={lookups} />
+          </Container>
+        </Section>
+      )}
+
+      {instructors.length > 0 && (
+        <Section tight alt>
+          <Container>
+            <SectionHeading
+              kicker="Cine predă"
+              title={activeName ? `Instructori · ${activeName}` : 'Instructori'}
+            />
+            <InstructorGrid instructors={instructors} locations={lookups.locationById} />
+          </Container>
+        </Section>
+      )}
+
+      <Section tight>
         <Container>
           <SectionHeading kicker="Unde ne găsești" title="Hartă și contact" />
           <DojoMap locations={location} height={400} />
@@ -131,15 +140,6 @@ export default function LocationDetail() {
           </div>
         </Container>
       </Section>
-
-      {instructors.length > 0 && (
-        <Section tight>
-          <Container>
-            <SectionHeading kicker="Cine predă" title="Instructori" />
-            <InstructorGrid instructors={instructors} locations={lookups.locationById} />
-          </Container>
-        </Section>
-      )}
 
       {pricing && (
         <Section tight alt>
