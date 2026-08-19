@@ -53,6 +53,9 @@ export default function LocationDetail() {
   })
 
   const pricing = data.pricing.find((group) => group.locationId === location.id)
+  const plans = (pricing?.plans ?? []).filter(
+    (plan) => !plan.disciplines || !active || plan.disciplines.includes(active),
+  )
   const activeName = active ? lookups.disciplineById[active]?.name : null
 
   return (
@@ -141,12 +144,15 @@ export default function LocationDetail() {
         </Container>
       </Section>
 
-      {pricing && (
+      {pricing && plans.length > 0 && (
         <Section tight alt>
           <Container>
-            <SectionHeading kicker="Abonamente" title="Prețuri" />
+            <SectionHeading
+              kicker="Abonamente"
+              title={activeName ? `Prețuri · ${activeName}` : 'Prețuri'}
+            />
             <div className={pricingStyles.plans}>
-              {pricing.plans.map((plan) => (
+              {plans.map((plan) => (
                 <PlanCard key={plan.id} plan={plan} currency={pricing.currency} />
               ))}
             </div>

@@ -11,9 +11,14 @@ DATA_FILE = Path(__file__).parent / "data" / "content.json"
 
 
 @lru_cache(maxsize=1)
-def load_content():
+def _read_content(_mtime):
     with DATA_FILE.open(encoding="utf-8") as fh:
         return json.load(fh)
+
+
+def load_content():
+    """Cached, but keyed on the file's mtime so edits are picked up on save."""
+    return _read_content(DATA_FILE.stat().st_mtime_ns)
 
 
 def find_by(collection, **criteria):

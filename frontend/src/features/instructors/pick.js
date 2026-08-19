@@ -1,11 +1,11 @@
 /**
- * Who teaches at a given sala (and optionally a given discipline).
+ * Who to show under a schedule.
  *
- * The schedule is the source of truth: if classes exist for that slot, the list
- * is exactly the people teaching them, so the roster always explains the orar
- * shown above it. Only when nothing is scheduled do we fall back to the
- * instructor's own `dojos`/`disciplines` fields, so a sala without a published
- * schedule still shows its team rather than nothing.
+ * With a discipline selected, the schedule is the source of truth: the list is
+ * exactly the people teaching those classes, so it always explains the orar
+ * above it. With no discipline selected ("Toate"), the sala's whole roster is
+ * shown as well — a Shihan who runs the dojo belongs on its page even in a term
+ * where he has no class of his own on the timetable.
  */
 export function instructorsFor(instructors, schedule, { locationId = null, disciplineId = null }) {
   const scheduled = new Set(
@@ -18,13 +18,16 @@ export function instructorsFor(instructors, schedule, { locationId = null, disci
       .map((entry) => entry.instructorId),
   )
 
+  const onRoster = (person) =>
+    (!locationId || person.dojos.includes(locationId)) &&
+    (!disciplineId || person.disciplines.includes(disciplineId))
+
+  if (!disciplineId) {
+    return instructors.filter((person) => scheduled.has(person.id) || onRoster(person))
+  }
+
   if (scheduled.size > 0) {
     return instructors.filter((person) => scheduled.has(person.id))
   }
-
-  return instructors.filter((person) => {
-    const atDojo = !locationId || person.dojos.includes(locationId)
-    const teaches = !disciplineId || person.disciplines.includes(disciplineId)
-    return atDojo && teaches
-  })
+  return instructors.filter(onRoster)
 }
