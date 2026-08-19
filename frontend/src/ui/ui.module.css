@@ -1,0 +1,288 @@
+/* Shared primitives: Container, Section, SectionHeading, Button, Card, Badge, Stat */
+
+.container {
+  width: 100%;
+  max-width: var(--maxw);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.container.narrow {
+  max-width: 860px;
+}
+
+.section {
+  padding-block: var(--section-y);
+}
+
+.section.tight {
+  padding-block: clamp(2.5rem, 5vw, 4rem);
+}
+
+.section.alt {
+  background: var(--bg-elev);
+  border-block: 1px solid var(--border-soft);
+}
+
+/* --- Section heading --- */
+
+.heading {
+  max-width: 60ch;
+  margin-bottom: clamp(2rem, 4vw, 3.25rem);
+}
+
+.heading.centered {
+  margin-inline: auto;
+  text-align: center;
+}
+
+.kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 1rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.kicker::before {
+  content: '';
+  width: 1.75rem;
+  height: 2px;
+  background: var(--accent);
+}
+
+.heading.centered .kicker::before {
+  display: none;
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(1.9rem, 4vw, 3rem);
+  font-weight: 400;
+  letter-spacing: -0.025em;
+}
+
+.lede {
+  margin-top: 1.1rem;
+  font-size: clamp(1rem, 1.6vw, 1.125rem);
+  color: var(--text-dim);
+}
+
+/* --- Button --- */
+
+.btn {
+  --btn-bg: transparent;
+  --btn-fg: var(--text);
+  --btn-border: var(--border);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  /* Comfortably above the 44px minimum touch target. */
+  min-height: 48px;
+  padding: 0.75rem 1.75rem;
+  border: 2px solid var(--btn-border);
+  border-radius: 99px;
+  background: var(--btn-bg);
+  color: var(--btn-fg);
+  font-size: 0.95rem;
+  font-weight: 650;
+  letter-spacing: 0.005em;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: transform 0.16s var(--ease), background 0.16s var(--ease),
+    border-color 0.16s var(--ease), box-shadow 0.16s var(--ease);
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--text);
+  box-shadow: var(--shadow);
+}
+
+.btn:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* --- Sizes --- */
+
+.sm {
+  min-height: 42px;
+  padding: 0.5rem 1.25rem;
+  font-size: 0.875rem;
+}
+
+.lg {
+  min-height: 56px;
+  padding: 0.95rem 2.25rem;
+  font-size: 1.02rem;
+}
+
+.primary {
+  --btn-bg: var(--text);
+  --btn-fg: #fff;
+  --btn-border: var(--text);
+}
+
+.primary:hover {
+  --btn-bg: #2c2726;
+  --btn-border: #2c2726;
+}
+
+.accent {
+  --btn-bg: var(--accent);
+  --btn-fg: #fff;
+  --btn-border: var(--accent);
+}
+
+.accent:hover {
+  --btn-bg: var(--accent-hover);
+  --btn-border: var(--accent-hover);
+}
+
+/* For buttons placed on the black hero / CTA bands. */
+.onDark {
+  --btn-fg: var(--inverse-text);
+  --btn-border: var(--inverse-border);
+}
+
+.onDark:hover {
+  --btn-bg: rgba(255, 255, 255, 0.07);
+  --btn-border: var(--inverse-faint);
+}
+
+.ghost {
+  --btn-border: transparent;
+  color: var(--text-dim);
+}
+
+.ghost:hover {
+  --btn-border: var(--border);
+  color: var(--text);
+  box-shadow: none;
+}
+
+/* --- Card --- */
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1.35rem, 2.5vw, 1.9rem);
+  background: var(--surface);
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  transition: border-color 0.25s var(--ease), transform 0.25s var(--ease),
+    background 0.25s var(--ease);
+}
+
+.card.interactive:hover {
+  transform: translateY(-3px);
+  border-color: var(--border);
+  background: var(--surface-2);
+}
+
+/* --- Badge --- */
+
+.badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  background: var(--bg-elev);
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  white-space: nowrap;
+}
+
+.badge.solid {
+  background: var(--accent-soft);
+  border-color: rgba(196, 30, 42, 0.22);
+  color: var(--accent);
+}
+
+/* --- Stat --- */
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.statValue {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3.5vw, 2.5rem);
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 0.78rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+/* --- Prose (long-form article text) --- */
+
+.prose {
+  max-width: var(--maxw-prose);
+  color: var(--text-dim);
+  font-size: 1.02rem;
+  line-height: 1.8;
+}
+
+.prose > * + * {
+  margin-top: 1.15em;
+}
+
+/* --- States --- */
+
+.state {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  min-height: 55vh;
+  padding: var(--gutter);
+  text-align: center;
+}
+
+.stateTitle {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+}
+
+.stateText {
+  max-width: 42ch;
+  color: var(--text-dim);
+}
+
+.spinner {
+  width: 34px;
+  height: 34px;
+  border: 2px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* --- Divider --- */
+
+.rule {
+  height: 1px;
+  border: 0;
+  background: var(--border-soft);
+}

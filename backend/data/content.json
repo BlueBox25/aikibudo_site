@@ -1,0 +1,804 @@
+{
+  "site": {
+    "name": "AikiBudo",
+    "fullName": "Academia de Arte Marțiale AikiBudo",
+    "legalName": "Asociația Clubul Sportiv Aikibudo",
+    "cif": "23637275 / 02.03.2008",
+    "founded": 1997,
+    "city": "București",
+    "tagline": "Scopul final al Artelor Marțiale Tradiționale este transformarea personală.",
+    "intro": "Aikido, Ju-Jitsu, Self-Defence și Combat MMA în trei dojo-uri din București. Din 1997.",
+    "mission": [
+      "Scopul final al artelor martiale traditionale este transformarea personală. Obiectivul său este crearea ființelor umane integrate care sunt capabile să-și dovedească din plin înțelepciunea și capacitatea de a rezolva orice problemă.",
+      "Artele martiale nu au ca scop lovirea oponenților cu pumnul sau cu piciorul ci mai degrabă folosirea energiei atacatorilor pentru a obține controlul asupra lor prin imobilizare sau pentru a-i proiecta la distanță. Noi punem accent pe mișcare și pe dinamica posturii.",
+      "În funcție de orientarea personală, practicanții vor găsi în toate artele noastre marțiale o tehnică eficientă de auto-apărare, o cale de iluminare spirituală, sau o modalitate de obținere a sănătătii fizice sau a păcii minții.",
+      "Suntem mândri să spunem că am format mii de practicanți, mulți dintre ei devenind centuri negre și continuând tradiția în propriile lor dojo-uri. Asta înseamnă Clubul Sportiv Aikibudo: o comunitate extinsă, unde fiecare membru contează."
+    ],
+    "stats": [
+      { "value": "1997", "label": "Anul înființării" },
+      { "value": "3", "label": "Dojo-uri în București" },
+      { "value": "4", "label": "Discipline" },
+      { "value": "8", "label": "Instructori" }
+    ],
+    "contact": {
+      "email": "sensei@aikido-bucuresti.ro",
+      "phones": [
+        { "name": "Shihan Nicolae Mitu", "number": "0724 35 35 01", "whatsapp": true },
+        { "name": "Shihan Bruno Demaille", "number": "0722 506 418", "whatsapp": false }
+      ],
+      "hours": [
+        { "days": "Luni - Vineri", "time": "8:30 - 22:00" },
+        { "days": "Sâmbătă - Duminică", "time": "9:00 - 17:00" }
+      ],
+      "hoursNote": "Orele de lucru pot suferi modificări ocazionale din motive de stagiu sau evenimente. Prin urmare, vă rugăm să verificați prin telefon/mesaj înainte de sosire. Vă mulțumim de înțelegere!",
+      "headquarters": "Str. Ankara nr. 12, ap. 1, Sector 1, București",
+      "bank": {
+        "name": "Banca Transilvania",
+        "iban": "RO03BTRL04501205323168XX",
+        "beneficiary": "Asociația Clubul Sportiv Aikibudo"
+      },
+      "redirect35": {
+        "label": "Redirecționează 3.5% din impozit",
+        "url": "https://formular230.ro/asociatia-clubul-sportiv-aikibudo"
+      }
+    },
+    "social": [
+      { "platform": "facebook", "label": "Academia Aikibudo", "url": "https://www.facebook.com/AcademiaAikibudo" },
+      { "platform": "instagram", "label": "Art Dojo", "url": "https://www.instagram.com/art_dojo_bucuresti/" },
+      { "platform": "instagram", "label": "Itsushin Dojo", "url": "https://www.instagram.com/itsushindojo/" },
+      { "platform": "instagram", "label": "Toshibu Dojo", "url": "https://www.instagram.com/toshibudojo/" }
+    ]
+  },
+
+  "locations": [
+    {
+      "id": "art",
+      "slug": "art-dojo",
+      "name": "Art Dojo",
+      "kicker": "Un spațiu dedicat pasiunii tale pentru arte marțiale",
+      "address": "Str. Nicolae G. Caramfil nr. 49, etaj 3",
+      "addressShort": "Nicolae Caramfil 49",
+      "coords": { "lat": 44.4823054, "lng": 26.091985 },
+      "mapsUrl": "https://www.google.com/maps/place/Art+Dojo+by+Aikido+Bucuresti/@44.4822693,26.091936,20.31z/data=!4m6!3m5!1s0x40b203d6c7dd7551:0x7f093803fd43b73b!8m2!3d44.4823054!4d26.091985!16s%2Fg%2F11vyqw075x",
+      "blurb": "Art Dojo reprezintă cel mai nou și modern spațiu al Academiei Aikibudo, creat pentru a oferi o experiență boutique-dojo tuturor pasionaților de arte marțiale.",
+      "description": [
+        "Bine ai venit la ART DOJO – Strada Nicolae Caramfil nr. 49 te invită să îți descoperi și să îți îmbunătățești abilitățile în arte marțiale într-un mediu autentic japonez.",
+        "Aici, îți oferim acces la o gamă largă de arte marțiale sub îndrumarea unui colectiv de instructori recunoscuți pentru experiența lor vastă. De la AIKIDO la JU-JITSU, de la MMA la AUTOAPĂRARE, avem totul pentru a satisface fiecare pasionat."
+      ],
+      "highlights": [
+        "Instructori cu vechime și experiență internațională",
+        "Două săli specializate pentru a te dedica artei preferate",
+        "Atmosfera autentică a unui dojo tradițional japonez",
+        "Seminarii și workshop-uri cu experți recunoscuți",
+        "O comunitate de practicanți pasionați și deschiși",
+        "Program flexibil adaptat nevoilor tale"
+      ],
+      "disciplines": ["aikido", "ju-jitsu", "self-defence", "combat-mma"],
+      "contacts": [
+        { "name": "Shihan Nicolae Mitu", "number": "0724 35 35 01", "whatsapp": true },
+        { "name": "Shihan Bruno Demaille", "number": "0722 506 418", "whatsapp": false },
+        { "name": "Sensei Zach Hamzi", "number": "0724 35 35 05", "whatsapp": true }
+      ]
+    },
+    {
+      "id": "itsushin",
+      "slug": "itsushin-dojo",
+      "name": "Itsushin Dojo",
+      "kicker": "Un spațiu dedicat pasiunii tale pentru Aikido",
+      "address": "Complexul Sportiv Național \"Lia Manoliu\", Str. Maior Ion Coravu 34/36 (intrarea prin Str. Maior Coravu)",
+      "addressShort": "Complex Sportiv Lia Manoliu",
+      "coords": { "lat": 44.4359959, "lng": 26.1467955 },
+      "mapsUrl": "https://www.google.com/maps/place/Clubul+Sportiv+Aikibudo/@44.4373237,26.1458534,16.22z/data=!4m6!3m5!1s0x40b1fed2fa2373e5:0xa7e4ffebe85277c0!8m2!3d44.4359959!4d26.1467955!16s%2Fg%2F11hd9qnntb",
+      "founded": 1997,
+      "blurb": "La Itsushin Dojo a început povestea Clubului Sportiv Aikibudo, în anul 1997. Aici s-au format primele generații de practicanți și instructori, într-un mediu tradițional în care se păstrează esența și valorile autentice ale Aikido-ului.",
+      "description": [
+        "Situat la Complexul Sportiv Național Lia Manoliu, pe Bulevardul Maior Ion Coravu 34/36, dojo-ul nostru te invită să îți descoperi și să îți îmbunătățești abilitățile în Aikido într-un mediu autentic și tradițional.",
+        "Înființat în 1997, Itsushin Dojo a devenit un punct de referință pentru comunitatea Aikido din oraș. Cu o istorie bogată și instructori dedicați, suntem aici să te ghidăm în călătoria ta în artele marțiale.",
+        "Itsushin Dojo nu este doar un loc de antrenament; este o comunitate strâns unită unde respectul, integritatea și creșterea personală sunt la loc de cinste. Vino să faci parte din familia noastră!"
+      ],
+      "highlights": [
+        "Instructori cu vechime și experiență internațională",
+        "Atmosfera unui dojo tradițional japonez",
+        "Participarea la seminarii și workshop-uri cu experți recunoscuți",
+        "O comunitate de practicanți pasionați și deschiși"
+      ],
+      "disciplines": ["aikido"],
+      "contacts": [
+        { "name": "Sensei Costin A. Istrate", "number": "0723 548 012", "whatsapp": true },
+        { "name": "Sensei Ionuț Moiseanu", "number": "0758 385 911", "whatsapp": true },
+        { "name": "Sensei Ion Ion Alexandru", "number": "0773 397 078", "whatsapp": true }
+      ]
+    },
+    {
+      "id": "toshibu",
+      "slug": "toshibu-dojo",
+      "name": "Toshibu Dojo",
+      "kicker": "Dojo-ul de aikido pentru copii",
+      "address": "Citadella Titan, Strada Colonel Iosif Albu nr. 88, București 032531 (în spate la Auchan Titan)",
+      "addressShort": "Citadella Titan, Col. Iosif Albu 88",
+      "coords": { "lat": 44.4200728, "lng": 26.1814528 },
+      "mapsUrl": "https://www.google.com/maps/place/Strada+Colonel+Iosif+Albu+88,+Bucure%C8%99ti/@44.4200766,26.1788779,17z/data=!3m1!4b1!4m6!3m5!1s0x40b1fc1d567382ff:0x184a896404b7f58!8m2!3d44.4200728!4d26.1814528!16s%2Fg%2F12ls2_kdr",
+      "blurb": "Toshibu Dojo este cel mai nou spațiu al Academiei Aikibudo, dedicat exclusiv copiilor. Aici, cei mici descoperă aikido-ul într-un mediu prietenos și sigur, potrivit pentru vârste fragede, începând de la 4 ani.",
+      "description": [
+        "Toshibu este un spațiu prietenos și sigur unde cei mici pot descoperi arta aikido-ului încă de la vârsta de 4 ani.",
+        "Prin joc și exerciții adaptate vârstei, copiii învață să își dezvolte disciplina, echilibrul, coordonarea și respectul față de ceilalți.",
+        "Antrenamentele sunt concepute special pentru a stimula atât corpul, cât și mintea, oferind o bază sănătoasă pentru creșterea armonioasă și formarea încrederii în sine.",
+        "Toshibu Dojo face parte din Academia Aikibudo București, una dintre cele mai respectate structuri de formare în artele marțiale tradiționale japoneze din România."
+      ],
+      "highlights": [
+        "Disciplina – învață să asculte, să respecte regulile și pe cei din jur.",
+        "Echilibrul și coordonarea – prin exerciții dinamice care stimulează motricitatea.",
+        "Încrederea în sine – copilul capătă curaj și o atitudine pozitivă.",
+        "Respectul și cooperarea – aikido-ul cultivă relațiile armonioase cu ceilalți.",
+        "Controlul emoțiilor – dezvoltă calmul și autocontrolul, chiar și în situații tensionate."
+      ],
+      "highlightsTitle": "Ce dezvoltă copilul prin aikido?",
+      "disciplines": ["aikido"],
+      "contacts": [
+        { "name": "Sensei Codruța Ștefan", "number": "0726 340 083", "whatsapp": true },
+        { "name": "Sensei Ion Alexandru", "number": "0732 610 178", "whatsapp": true }
+      ]
+    }
+  ],
+
+  "disciplines": [
+    {
+      "id": "aikido",
+      "slug": "aikido",
+      "name": "Aikido",
+      "kanji": "合気道",
+      "romaji": "Aikidō",
+      "tagline": "Calea armoniei energiei",
+      "summary": "Artă marțială japoneză dezvoltată de Morihei Ueshiba. Nu urmărește lovirea oponentului, ci folosirea energiei atacului pentru a obține controlul prin imobilizare sau proiectare.",
+      "ageGroups": ["5-7 ani", "7-9 ani", "9-14 ani", "Adulți"],
+      "locations": ["art", "itsushin", "toshibu"],
+      "quotes": [
+        {
+          "text": "Calea războinicului a fost prost înțeleasă. Ea nu înseamnă să omori sau să distrugi pe alții. A lovi, a răni sau a distruge sunt cele mai rele lucruri pe care le poate face o ființă umană. Adevărata cale a războinicului este prevenirea acestui măcel, este Arta Păcii, puterea iubirii.",
+          "author": "O-Sensei Morihei Ueshiba",
+          "role": "Fondator Aikido"
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Ce este Aikido",
+          "body": [
+            "AIKIDO este o artă marțială japoneză dezvoltată de Morihei Ueshiba (adesea supranumit O-Sensei). La nivel pur fizic este o artă ce include tehnici (proiectări și luxări) derivate din Jujitsu și Kenjutsu. Aikido nu are ca scop lovirea oponenților cu pumnul sau cu piciorul ci mai degrabă folosirea energiei atacatorilor pentru a obține controlul asupra lor prin imobilizare sau pentru a-i proiecta la distanță. Aikido-ul pune accent pe mișcare și pe dinamica posturii."
+          ]
+        },
+        {
+          "heading": "Morihei Ueshiba, fondatorul",
+          "body": [
+            "Morihei Ueshiba s-a născut în Tanabe, Wakayama, Japonia pe 14 Decembrie 1883. Singurul băiat dintre cei cinci copii ai lui Yoroku și Yuki Ueshiba a fost crescut într-un mod oarecum privilegiat. Ueshiba era un copil slab și bolnăvicios, cu înclinații mai degrabă livrești. La o vârstă fragedă, tatăl său l-a încurajat să înceapă luptele sumo și înotul și l-a încântat cu povești despre străbunicul Kichiemon care a fost considerat un samurai foarte puternic în vremea sa. Dorința de a dobândi o astfel de putere a crescut și mai mult atunci când tânărul Ueshiba a fost martorul unui atac asupra tatălui său din partea unor rivali politici.",
+            "Este știut că Ueshiba a studiat mai multe arte marțiale în tinerețe dar nu s-a antrenat intensiv în nici una. Asta s-a întâmplat până în 1912 când s-a mutat împreună cu soția sa în Hokkaido, moment în care antrenamentele sale în artele marțiale au căpătat o reală profunzime. Asta pentru că a început studiul Daito-ryu Aiki-jujutsu sub îndrumarea lui Sokaku Takeda."
+          ]
+        },
+        {
+          "heading": "De la Aiki-jujutsu la Aikido",
+          "body": [
+            "În primii ani, între 1920 și 1930, Ueshiba a predat sistemul Aiki-jujutsu în care primise atestatul de la Sokaku Takeda. Formele timpurii de antrenament sub îndrumarea lui Morihei Ueshiba erau caracterizate de folosirea amplă a loviturilor în puncte vitale (atemi), folosirea pe scară largă a armelor și o abordare mult mai liniară a tehnicii decât se întâlnește în formele mai târzii ale Aikido-ului.",
+            "Mai târziu, pe măsură ce Ueshiba se separa treptat de Takeda, a început să implementeze mai multe schimbări în arta sa. Aceste schimbări sunt reflectate în diferitele nume cu care se referă la arta sa, întâi Aiki-jujutsu, apoi Ueshiba-ryu, asahi-ryu, Aiki budo și, în final, Aikido."
+          ]
+        },
+        {
+          "heading": "Mai multe despre Morihei Ueshiba",
+          "body": [
+            "Încă de tânăr, Morihei Ueshiba a fost un practicant de excepție al artelor marțiale, un maestru al sabiei, al bastonului, al suliței precum și al jujitsu-ului. În același timp, O-Sensei avea și o puternică aspirație spirituală, meditând asupra zădărniciei unui drum bazat pe victoria asupra altora. Ueshiba a transformat măiestria sa tehnică în artele marțiale tradiționale într-o nouă artă marțială. Aikido-ul a apărut ca o artă fundamental diferită de cele care au precedat-o, de un rafinament și o putere remarcabile.",
+            "În funcție de orientarea personală, practicanții vor găsi în Aikido o tehnică eficientă de auto-apărare, o cale de iluminare spirituală, sau o modalitate de obținere a sănătătii fizice sau a păcii minții. O-Sensei punea accent pe aspectele morale și spirituale ale acestei arte, în special pe dezvoltarea armoniei și a păcii.",
+            "Această perspectivă este încă valabilă în Aikido-ul contemporan, deși diferitele stiluri existente astăzi pun mai mult sau mai puțin accent pe aspectele spirituale.",
+            "Pe măsură ce Ueshiba înainta în vârstă, în tehnică și în spiritualitate, arta lui s-a schimbat și ea, devenind mai maleabilă și mai circulară. Tehnicile de lovire au devenit mai puțin importante iar predarea lor – formală. O expresie a artei sale era accentul puternic pus pe tehnicile așa-numite \"kokyu-nage\" sau \"aruncările prin forța respirației\" care sunt mai maleabile și mai armonioase, folosindu-se de mișcarea oponenților. Multe din aceste tehnici își au rădăcinile în metodele Daito-ryu, mai degrabă decât în tehnicile mult mai directe de luxare din stilul jujutsu."
+          ]
+        },
+        {
+          "heading": "Experiențe spirituale",
+          "body": [
+            "După ce a părăsit Hokkaido, în viața lui Morihei Ueshiba și-a făcut simțită influența Onisaburo Deguchi, liderul spiritual al religiei Omoto-kyo din localitatea Ayabe.",
+            "Ca un efect în plus al creșterii sale spirituale, această legătură s-a soldat cu intrarea lui Ueshiba în cercurile elitelor politice, ca expert în artele marțiale. Dojo-ul lui Ueshiba din Ayabe a devenit locul de antrenament al membrilor sectei Omoto-kyo. Deși până la urmă Ueshiba s-a distanțat de Onisaburo Deguchi, efectul acestuia asupra sa și a artei sale nu poate fi contestat.",
+            "Nașterea propriu-zisă a Aikido-ului a avut loc în urma unor experiențe de trezire spirituală pe care Morihei Ueshiba le-a avut. Acesta își descrie revelațiile astfel: \"În acel moment am fost iluminat: sursa budo-ului este iubirea lui Dumnezeu – spiritul protecției iubitoare pentru toate ființele… Budo nu înseamnă învingerea unui adversar prin forță și nu este un mijloc prin care să conducem lumea la distrugere… Adevăratul budo este acceptarea spiritului universului, păstrarea păcii în lume, protejarea și cultivarea tuturor ființelor…\"",
+            "În 1927 Ueshiba s-a mutat la Tokio unde și-a fondat primul dojo, care există și azi sub numele de Aikikai Hombu Dojo. Între anii 1940 – 1942 a făcut numeroase vizite la Manchukuo pentru a preda arta sa marțială. În 1942 a părăsit Tokio și s-a mutat la Iwama în prefectura Ibaraki, unde termenul de Aikido a fost folosit pentru prima dată ca nume pentru arta sa. Aici el a fondat Aiki Shuren Dojo, cunoscut și ca Iwama dojo. În tot acest timp a călătorit intens în Japonia, în special în regiunea Kansai, predând Aikido."
+          ]
+        },
+        {
+          "heading": "Principiile Aikido: AI, KI, DO",
+          "body": [
+            "Ai (合) înseamnă a unifica, a uni, a îmbina, Ki (気) înseamnă energie, spirit, Do (道) înseamnă cale, în sensul de cale spirituală, astfel că Aikido se poate traduce prin Calea Energiilor Unificate. O altă traducere poate și mai corectă ar fi Calea AIKI, deoarece Aiki este un principiu din artele marțiale care exprimă abilitatea de a te armoniza cu atacul unui agresor în scopul de a-l controla cu minim de efort, astfel că Aiki se aplică prin înțelegerea ritmului și intenției atacatorului pentru a găsi poziția optimă și momentul pentru a aplica o tehnică. În Aikido energiile se unesc, nu se ciocnesc precum în sporturile marțiale; apărarea nu este decât o continuare a atacului, cele două, atacul și apărarea, fiind elemente ale aceluiași întreg. Avându-și originile în tehnicile de luptă cu mâinile goale ori cu sabia sau sulița utilizate de samurai în Japonia medievală, Aikido utilizează proiectări, fixări, luxări și lovituri într-o măsură mai mică, însă cea mai mare parte din tehnici sunt creația maestrului Morihei Ueshiba.",
+            "Aikido folosește cu prisosință conceptul Ki (tradus ca \"energie vitală\"). Aikido este una dintre cele mai spirituale arte marțiale, făcându-se referiri la această disciplină ca fiind \"Zen în mișcare\". Aikido se traduce ca și \"calea de armonizare a ki-ului\". Care este natura Ki-ului este o chestiune oarecum controversată.",
+            "Doshu Kisshomaru Ueshiba, fiul lui O-Sensei, spunea despre Ki: \"S-ar putea să auzim elevi spunând că este senzația unui anume tip de energie ce apare atunci când mintea și corpul se află în armonie. Sau este o forță stranie care apare în mod neașteptat dintr-o sursă necunoscută. Sau este senzația sincronizării perfecte în practica Aikido. Sau este o mișcare spontană, inconștientă care reîmprospătează mintea și corpul după o execuție bună, ș.a.m.d. Fiecare răspuns este corect în sensul că este o reacție autentică obținută prin experiența personală. Și, fiind expresia directă a unei stări simțite, conține o certitudine ce nu poate fi negată. Astfel, diferențele în răspunsuri sunt neglijabile și marea lor varietate arată nu numai dificultatea în definirea exactă a Ki-ului, ci și profunzimea și vastitatea manifestărilor acestuia, imposibil de acoperit printr-o singură definiție.\""
+          ]
+        }
+      ],
+      "concepts": [
+        {
+          "name": "Intrarea",
+          "japanese": "Irimi",
+          "body": "Intrarea sau irimi este una dintre tehnicile de bază din Aikido și este strâns legată de conceptul \"armonizării cu atacatorul\". La un nivel fundamental, irimi este o mișcare ce pare a fi un pas, o alunecare în atacul adversarului. În Aikido, majoritatea mișcărilor sunt circulare sau în spirală; prin irimi, practicantul intră în cercul mișcării, astfel încât energia atacului să poată fi direcționată de-a lungul unui plan circular."
+        },
+        {
+          "name": "Căderea",
+          "japanese": "Ukemi",
+          "body": "Ukemi poate fi descris ca arta de a primi tehnica. Practica ukemi presupune căderi și rostogoliri.",
+          "list": [
+            "Pentru a fi în siguranță, pentru a evita rănirile în confruntarea respectivă, dar și pentru a fi conștient de ceea ce se petrece în timpul întregii confruntări și pentru a putea reacționa în mod adecvat.",
+            "Pentru a experimenta aruncarea. Parte a procesului de învățare trebuie să fie și înțelegerea a ceea ce simte și \"cealaltă\" parte, ce simte când este prins într-o anume tehnică.",
+            "Pentru a învăța să asculți cu corpul tău. Pentru a arunca bine este nevoie să-ți simți partenerul. Adesea suntem atât de prinși în rolul activ de nage încât uităm să fim receptivi la partenerul nostru și la mișcarea într-un mod care ne armonizează cu uke.",
+            "Pentru a-ți ajuta partenerul să învețe. Să fii un uke bun înseamnă să păstrezi legătura cu nage și să-i permiți să experimenteze această conexiune și să experimenteze cu adevărat tehnica.",
+            "Pentru a-ți întări și dezvolta corpul. Pentru a prelua tehnicile bine trebuie să depui efort și să fii flexibil și vigilent."
+          ]
+        },
+        {
+          "name": "Atacul",
+          "japanese": "Atemi",
+          "body": "Tradus literar, atemi înseamnă lovitură. Spre deosebire de alte arte marțiale, unde loviturile sunt un scop în sine, în Aikido loviturile au mai degrabă rolul de a \"deranja\" echilibrul fizic și psihic al atacantului, pentru a executa tehnica într-un mod cât mai eficient."
+        },
+        {
+          "name": "Ieșirea din linia de atac",
+          "japanese": null,
+          "body": "Energia oricărui atac curge dintr-un punct în altul, de la atacator către potențiala victimă. Linia care unește aceste două puncte este numită linie de atac. De exemplu, energia din lovitura boxerului curge (prin pumnul său) din corpul său până la adversar. O dată ce un atac a fost inițiat, este foarte dificil, dacă nu imposibil, de schimbat cursul atacului. Ieșirea din linia de atac înseamnă să te deplasezi într-o zonă de siguranță, de unde să poți reacționa, în momentul sau după ce atacul a fost declanșat."
+        },
+        {
+          "name": "Centrul",
+          "japanese": "Hara",
+          "body": "Localizată în abdomen, hara este sursa de Ki (energie) și centrul de greutate și echilibru al corpului. Simțind hara și menținând concentrarea atât asupra propriului centru cât și al partenerului de antrenament, obținem fluiditatea mișcărilor și dezinvoltura execuției tehnicilor."
+        }
+      ],
+      "training": {
+        "intro": "Aikido este o artă marțială japoneză ce urmărește transformarea personală prin integrarea abilităților fizice și mentale. În dojo, accentul major este pe practică mai mult decât pe discuțiile filozofice, cu scopul de a dezvolta capacitatea practicanților de a răspunde înțelept și eficient la provocări.",
+        "groups": [
+          {
+            "title": "Structura antrenamentului",
+            "items": [
+              { "term": "Parteneriat", "text": "Antrenamentele se desfășoară în perechi, unde elevii alternează rolurile de uke (atacator) și nage (apărător). Aceasta ajută la dezvoltarea rezistenței, flexibilității și forței fizice." },
+              { "term": "Diversitatea practicanților", "text": "Aikido este accesibil tuturor, de la copii la adulți, datorită adaptabilității la diferite niveluri de pregătire fizică." }
+            ]
+          },
+          {
+            "title": "Componente ale antrenamentului",
+            "items": [
+              { "term": "Aspecte fizice", "text": "Practicanții își dezvoltă condiția fizică generală și învață tehnici marțiale specifice. O parte importantă a pregătirii este învățarea căderilor și rostogolirilor în siguranță pentru a preveni accidentările." },
+              { "term": "Tehnici specifice", "text": "Include atât lovituri cât și prize pentru atac, și proiectări și fixări pentru apărare. După stăpânirea tehnicilor de bază, elevii progresează la apărarea liberă împotriva mai multor adversari și la lucrul cu arme." }
+            ]
+          },
+          {
+            "title": "Principii de antrenament",
+            "items": [
+              { "term": "Folosirea corpului", "text": "În Aikido se pune accent pe mișcările coordonate ale întregului corp și pe menținerea echilibrului." },
+              { "term": "Forme prestabilite", "text": "Practica se bazează pe secvențe fixe între doi parteneri, unde uke inițiază un atac și nage neutralizează atacul utilizând tehnicile de Aikido." },
+              { "term": "Rolul Nage", "text": "Nage învață să controleze și să redirecționeze energia atacului, menținându-se în armonie cu adversarul." },
+              { "term": "Rolul Uke", "text": "Uke învață să fie calm și flexibil, să-și regăsească echilibrul și să se protejeze în situații de dezavantaj." }
+            ]
+          }
+        ],
+        "outro": "Practicarea Aikido oferă un echilibru între dezvoltarea fizică și cea mentală, punându-se un accent special pe relaxare controlată, flexibilitate și rezistență, în locul forței brute. Această abordare holistică ajută la dezvoltarea unei stări de bine și a unei înțelegeri profunde a propriului corp și minte."
+      }
+    },
+    {
+      "id": "ju-jitsu",
+      "slug": "ju-jitsu",
+      "name": "Ju-Jitsu",
+      "kanji": "柔術",
+      "romaji": "Jūjutsu",
+      "tagline": "Arta supleței",
+      "summary": "Reunește tehnicile de luptă dezvoltate de bushi și samurai în perioada Edo pentru a se apăra când erau dezarmați. Principiul central: suplețea controlează forța.",
+      "ageGroups": ["2-5 ani", "5-7 ani", "7-9 ani", "9-13 ani", "Adulți (14+)", "Seniori"],
+      "locations": ["art"],
+      "quotes": [
+        {
+          "text": "柔よく剛を制す (jū yoku gō wo sei su) — suplețea controlează forța.",
+          "author": "Principiul jū",
+          "role": null
+        }
+      ],
+      "sections": [
+        {
+          "heading": "Origini",
+          "body": [
+            "Ju-jutsu sau Ju-jitsu sau chiar jiu-jitsu (柔術), literalmente \"Arta supleței\", reunește tehnici de luptă care au fost dezvoltate de bushi (武士), termen generic pentru războinic, și de samurai (侍), războinic profesionist în slujba nobilimii, în perioada Edo (aproximativ 1600-1868) să se apere când erau dezarmați într-un duel sau pe câmpul de luptă.",
+            "A fost cunoscut sub o duzină de nume, cum ar fi: Yawara, Tai-jutsu, Wa-jutsu, Torite, Kumiuchi, Shubaku, Koshi-No-Mawari.",
+            "Toate aceste metode au fost predate în diferite școli (ryu), fiecare dintre ele dorind să fie cea mai bună și să posede artă completă. Prin urmare, putem defini practica Ju-Jutsu ca artă de apărare, de obicei neînarmată, împotriva unui adversar înarmat sau neînarmat."
+          ]
+        },
+        {
+          "heading": "Principiile Ju-Jitsu (filozofie)",
+          "body": [
+            "Conceptul principal în jūjutsu este \"jū\", literalmente \"suplețe\", adică pentru a evita atacul frontal pentru a controla un adversar mai puternic, fără opoziție de forță. Această abordare se găsește în expresia 柔よく剛を制す (jū yoku gō wo sei su), ceea ce înseamnă \"suplețea controlează forța\".",
+            "Acest principiu a dat naștere unui set de tehnici sofisticate pentru evitarea și canalizarea forței opuse și controlul adversarului prin deplasări, lovituri, proiectări și imobilizarea prin controlul punctelor vitale și articulațiilor.",
+            "Dar, mai presus de toate, practica și învățământul de Ju-Jitsu au ca scop, ca în toate artele marțiale tradiționale, o dezvoltare fizică și mentală, în spiritul pur al Bushido-ului (武士道), literalmente \"Calea războinicului\".",
+            "Bushido este cartea care explică cele 7 principii morale pe care războinicii japonezi (samurai și bushi) trebuiau să le respecte. Dacă am transpune această carte în lumea occidentală, am putea să o considerăm manualul gentlemanului. Și dacă am transpune această carte în România astăzi, am putea să o considerăm Codul bunelor maniere."
+          ]
+        },
+        {
+          "heading": "Pedagogie Ju-Jitsu",
+          "body": [
+            "Tehnicile de luptă și de apărare sunt adesea imaginile reținute de publicul larg și este normal. Dar acesta este doar vârful iceberg-ului! Ele sunt importante și este esențial să le stăpânim pentru că, din păcate, nimeni nu este ferit de riscul de agresiune.",
+            "Cu toate acestea, dacă, în Evul Mediu, acestea au fost scopul practicii Ju-Jitsu, au devenit, în epoca noastră modernă, mai mult un sprijin pentru dezvoltarea fizică și mentală a individului. Acest lucru se materializează printr-o pedagogie foarte prelucrată și adaptată.",
+            "Durata și intensitatea sesiunilor vor fi diferite pentru fiecare grupă de vârstă: de exemplu, sesiunea copilului durează o oră, în timp ce sesiunea pentru adulți durează o oră și jumătate. Pentru copii, în niciun caz nu se pune problema pentru ei să lucreze tehnici periculoase, cum ar fi lovituri, acțiuni pe articulații, strangulare, proiectări. Pentru grupele 5-7 ani și 7-9 ani, sesiunea va consta în principal din exerciții de activitate fizică care corespund nevoilor lor."
+          ]
+        }
+      ],
+      "techniques": {
+        "title": "A fost o metodă de luptă corp la corp constând din tehnici pentru a:",
+        "items": [
+          "Prinde, proiecta, răsuci, provoca dislocări",
+          "Tăia, lovi cu picioarele, cu mâinile, etc.",
+          "Neutraliza adversarii cu săbii sau bastoane cu mâinile goale",
+          "Utiliza săbii, sulițe, bastoane etc."
+        ]
+      },
+      "bushido": {
+        "title": "Cele 7 principii morale ale Bushido",
+        "kanji": "武士道",
+        "virtues": [
+          { "romaji": "Gi", "kanji": "義", "meaning": "dreptate, sinceritate" },
+          { "romaji": "Yū", "kanji": "勇", "meaning": "curaj" },
+          { "romaji": "Jin", "kanji": "仁", "meaning": "compasiune" },
+          { "romaji": "Rei", "kanji": "礼", "meaning": "curtoazie, respect" },
+          { "romaji": "Makoto / Shin", "kanji": "誠", "meaning": "adevăr, sinceritate" },
+          { "romaji": "Meiyo", "kanji": "名誉", "meaning": "onoare" },
+          { "romaji": "Chugi", "kanji": "忠義", "meaning": "fidelitate, angajament, loialitate" }
+        ]
+      },
+      "sessionStructure": {
+        "title": "O sesiune standard de Ju-Jitsu tradițional",
+        "intro": "Are un curriculum și o durată care se bazează pe criterii fizice și fiziologice ale studenților și este împărțită în patru părți:",
+        "steps": [
+          "Salutul — momentul în care atragem atenția studenților asupra pozițiilor care trebuie respectate, dar și asupra importanței igienei (de exemplu: să aibă unghiile întreținute corespunzător pentru a nu răni partenerii).",
+          "Încălzire",
+          "Sesiunea în sine (tehnici)",
+          "Revenire la calm prin exerciții de respirație și relaxare"
+        ]
+      }
+    },
+    {
+      "id": "self-defence",
+      "slug": "self-defence",
+      "name": "Self-Defence",
+      "kanji": null,
+      "romaji": null,
+      "tagline": "Educație, disciplină și responsabilitate",
+      "summary": "Cursuri structurate profesionist, concepute pentru dezvoltarea reală a capacității de autoapărare în situații cotidiene, sub îndrumarea lui Shihan Mitu Nicolae.",
+      "ageGroups": ["Adulți"],
+      "locations": ["art"],
+      "leadInstructor": "mitu-nicolae",
+      "quotes": [],
+      "sections": [
+        {
+          "heading": "Programul",
+          "body": [
+            "La Art Dojo, sub îndrumarea lui Shihan Mitu, oferim cursuri de self-defence structurate profesionist, concepute pentru dezvoltarea reală a capacității de autoapărare în situații cotidiene. Antrenamentele sunt construite pe principii funcționale, clare și testate, punând accent pe eficiență, control și siguranță personală.",
+            "Programele noastre se adresează atât începătorilor, cât și practicanților cu experiență, fiind adaptate vârstei, nivelului fizic și obiectivelor fiecărui participant. Cursurile includ tehnici de prevenție, gestionarea conflictului, reacția în situații de stres, eliberări din prize, apărare împotriva agresiunilor comune și dezvoltarea unei atitudini mentale corecte în fața pericolului.",
+            "La Art Dojo, self-defence nu înseamnă violență, ci educație, disciplină și responsabilitate. Printr-o abordare modernă, coerentă și progresivă, formăm practicanți încrezători, capabili să își protejeze integritatea fizică și psihică."
+          ]
+        },
+        {
+          "heading": "Cursuri specializate",
+          "body": [
+            "Oferim cursuri specializate pentru femei, cunoscute sub numele de Lady Self Defence, care se concentrează pe tehnici specifice de apărare ce pot fi utilizate în situații de hărțuire sau atac.",
+            "De asemenea, conducem sesiuni de Streetfight Self Defence, axate pe tehnici realiste și brutale necesare pentru autoapărare în contexte urbane agresive. Aceste sesiuni sunt concepute pentru a oferi tehnici specifice și adaptate nevoilor individuale ale fiecărui cursant.",
+            "Pe lângă sesiunile de grup, Zacharia Hamzi este dedicat să ofere consultanță și training individualizat, ajutându-i pe cursanți să își dezvolte un plan personalizat de autoapărare, bazat pe nevoile și abilitățile lor specifice."
+          ]
+        }
+      ],
+      "curriculum": {
+        "title": "Scenarii și tehnici realiste de autoapărare",
+        "items": [
+          "Tehnici de evitare a confruntării și fazele unui atac.",
+          "Comunicare verbală și non-verbală în situații de conflict.",
+          "Principii de bază în securitatea personală.",
+          "Studiul armelor de impact și apărarea împotriva atacurilor cu cuțit."
+        ]
+      },
+      "equipment": {
+        "title": "Ținută și echipament",
+        "items": [
+          "Ținută pentru pregătire: tricou negru, pantaloni negri.",
+          "Echipament de protecție: cască cu grilaj, cochilie, tibiere, mănuși MMA."
+        ]
+      }
+    },
+    {
+      "id": "combat-mma",
+      "slug": "combat-mma",
+      "name": "Combat MMA & Pankration",
+      "kanji": null,
+      "romaji": null,
+      "tagline": "Acolo unde se decide o confruntare reală",
+      "summary": "Un sistem construit pe trei planuri: striking, clinch + take-down și luptă la sol. Antrenăm tranzițiile dintre ele, pentru că acolo se decide o confruntare reală.",
+      "ageGroups": ["Adulți"],
+      "locations": ["art"],
+      "leadInstructor": "zacharia-hamzi",
+      "quotes": [],
+      "sections": [
+        {
+          "heading": "Sistemul",
+          "body": [
+            "Combat MMA este un sistem construit pe trei planuri: striking, clinch + take-down și luptă la sol. Nu antrenăm un singur set de tehnici scoase din context — antrenăm tranzițiile dintre ele, pentru că acolo se decide o confruntare reală.",
+            "Fundația sistemului nostru este Pankrationul — cea mai veche formă de arte marțiale mixte din lume, disciplină a Jocurilor Olimpice antice, care combina de la bun început lovirea cu lupta corp la corp. Peste el se așază jiu-jitsu, care aduce principiile de control, pârghie și eficiență fără forță brută."
+          ]
+        }
+      ],
+      "curriculum": {
+        "title": "Ce înveți",
+        "items": [
+          "Striking — pumni, lovituri de picior, coate, genunchi. Distanță, unghiuri, ritm, control al schimbului.",
+          "Clinci și doborâri — dezechilibrări, proiectări, control în poziție apropiată, apărarea la doborâre.",
+          "Luptă la sol — poziții de control, treceri de gardă, ieșiri, finalizări prin strangulare și pârghie articulară.",
+          "Pankration — integrarea completă. Tranziția din picioare la sol și înapoi, sub presiune.",
+          "Submission — baza tehnică și principiile care fac diferența între a te lupta și a controla."
+        ]
+      },
+      "callouts": [
+        { "title": "Vino la un antrenament gratuit!", "text": "Experimentează intensitatea și dinamica unui antrenament de combat! Nu ezita să ne suni pentru programare." },
+        { "title": "Alătură-te comunității noastre!", "text": "Vrei să fii parte dintr-o comunitate energică și susținătoare? Înscrie-te la clubul nostru și împreună vom atinge noi culmi în fitness și autoapărare." },
+        { "title": "Programează o sesiune personalizată!", "text": "Dacă preferi o abordare mai personalizată, oferim antrenamente individuale adaptate obiectivelor și nevoilor tale." }
+      ]
+    }
+  ],
+  "instructors": [
+    {
+      "id": "mitu-nicolae",
+      "name": "Nicolae Mitu",
+      "title": "Shihan",
+      "displayName": "Shihan Nicolae Mitu",
+      "disciplines": ["aikido", "ju-jitsu", "self-defence"],
+      "specialty": "Aikido, Krav-Maga, Ju-Jitsu",
+      "ranks": [
+        "6 Dan - Aikido Aikikai",
+        "6 Dan - Ju-Jitsu",
+        "Antrenor Internațional nivel 4 - Pangration",
+        "Instructor Internațional nivel 3 - Krav Maga, Israeli System of Military Self Defence (ISMSD)",
+        "Coregraf de luptă"
+      ],
+      "bio": null,
+      "bioTruncated": true,
+      "phone": "0724 35 35 01",
+      "whatsapp": true,
+      "dojos": ["art"],
+      "social": [
+        { "platform": "facebook", "url": "https://www.facebook.com/nicolae.mitu.9" }
+      ]
+    },
+    {
+      "id": "bruno-demaille",
+      "name": "Bruno Demaille",
+      "title": "Shihan",
+      "displayName": "Shihan Bruno Demaille",
+      "disciplines": ["ju-jitsu"],
+      "specialty": "Ju-Jitsu",
+      "ranks": [
+        "5 Dan - World Ju Jitsu Federation",
+        "3 Dan - Académie Européenne de Ju Jitsu Traditionnel (Méthode Wa Jutsu)"
+      ],
+      "bio": "5 Dan - World Ju Jitsu Federation. 3 Dan - Académie Européenne de Ju Jitsu Traditionnel (Méthode Wa Jutsu). Brevet…",
+      "bioTruncated": true,
+      "phone": "0722 506 418",
+      "whatsapp": false,
+      "dojos": ["art"],
+      "social": [
+        { "platform": "linkedin", "url": "https://www.linkedin.com/in/bruno-demaille-025a9b11b/" }
+      ]
+    },
+    {
+      "id": "costin-istrate",
+      "name": "Costin A. Istrate",
+      "title": "Sensei",
+      "displayName": "Sensei Costin A. Istrate",
+      "disciplines": ["aikido"],
+      "specialty": "Aikido",
+      "ranks": ["3 Dan Aikido Aikikai", "Dojo Cho - Itsushin Dojo"],
+      "bio": "Practicant de Aikido din anul 2011 (în prealabil, practicant și de Judo)…",
+      "bioTruncated": true,
+      "phone": "0723 548 012",
+      "whatsapp": true,
+      "dojos": ["itsushin"],
+      "social": []
+    },
+    {
+      "id": "codruta-stefan",
+      "name": "Codruța Ilinca Ștefan",
+      "title": "Sensei",
+      "displayName": "Sensei Codruța Ilinca Ștefan",
+      "disciplines": ["aikido"],
+      "specialty": "Aikido",
+      "ranks": ["2 Dan Aikido Aikikai", "Dojo Cho - Toshibu Dojo", "Absolventă a Școlii Naționale de Antrenori"],
+      "bio": null,
+      "bioTruncated": false,
+      "phone": "0726 340 083",
+      "whatsapp": true,
+      "dojos": ["toshibu"],
+      "social": []
+    },
+    {
+      "id": "vlad-badica",
+      "name": "Vlad Bădică",
+      "title": "Sensei",
+      "displayName": "Sensei Vlad Bădică",
+      "disciplines": ["aikido"],
+      "specialty": "Aikido",
+      "ranks": ["2 Dan Aikido Aikikai"],
+      "bio": null,
+      "bioTruncated": false,
+      "phone": null,
+      "whatsapp": false,
+      "dojos": [],
+      "social": []
+    },
+    {
+      "id": "zacharia-hamzi",
+      "name": "Zacharia Hamzi",
+      "title": "Sensei",
+      "displayName": "Sensei Zacharia Hamzi",
+      "disciplines": ["aikido", "combat-mma", "self-defence"],
+      "specialty": "MMA, Aikido, Pangration",
+      "ranks": [
+        "Sensei Aikido - 1 Dan Aikido (Aikikai), activ din 2017",
+        "Instructor - 1 Dan Ju-Jitsu (FRAM)",
+        "Antrenor - Pangration Athlima"
+      ],
+      "bio": null,
+      "bioTruncated": true,
+      "phone": "0724 35 35 05",
+      "whatsapp": true,
+      "dojos": ["art"],
+      "social": [
+        { "platform": "facebook", "url": "https://www.facebook.com/zach.hamzi" },
+        { "platform": "instagram", "url": "https://www.instagram.com/zachhamzi/" }
+      ]
+    },
+    {
+      "id": "ionut-moiseanu",
+      "name": "Ionuț Moiseanu",
+      "title": "Sensei",
+      "displayName": "Sensei Ionuț Moiseanu",
+      "disciplines": ["aikido"],
+      "specialty": "Aikido",
+      "ranks": ["1 Dan - Aikido Aikikai", "Absolvent al Școlii Naționale de Antrenori", "Dive Master SSI"],
+      "bio": null,
+      "bioTruncated": false,
+      "phone": "0758 385 911",
+      "whatsapp": true,
+      "dojos": ["itsushin"],
+      "social": []
+    },
+    {
+      "id": "ion-alexandru",
+      "name": "Ion Ion Alexandru",
+      "title": "Sensei",
+      "displayName": "Sensei Ion Ion Alexandru",
+      "disciplines": ["aikido"],
+      "specialty": "Aikido",
+      "ranks": ["1 Dan - Aikido"],
+      "bio": null,
+      "bioTruncated": false,
+      "phone": "0732 610 178",
+      "phoneAlt": "0773 397 078",
+      "whatsapp": true,
+      "dojos": ["itsushin", "toshibu"],
+      "social": [
+        { "platform": "facebook", "url": "https://www.facebook.com/profile.php?id=100069426692837" }
+      ]
+    }
+  ],
+
+  "days": [
+    { "id": 1, "short": "Lu", "name": "Luni" },
+    { "id": 2, "short": "Ma", "name": "Marți" },
+    { "id": 3, "short": "Mi", "name": "Miercuri" },
+    { "id": 4, "short": "Jo", "name": "Joi" },
+    { "id": 5, "short": "Vi", "name": "Vineri" },
+    { "id": 6, "short": "Sâ", "name": "Sâmbătă" },
+    { "id": 7, "short": "Du", "name": "Duminică" }
+  ],
+
+  "schedule": [
+    { "id": "art-aikido-tue-1700", "locationId": "art", "disciplineId": "aikido", "day": 2, "start": "17:00", "end": "18:00", "className": "Aikido", "ageGroup": "5-7 ani", "instructorId": "zacharia-hamzi" },
+    { "id": "art-aikido-tue-1810", "locationId": "art", "disciplineId": "aikido", "day": 2, "start": "18:10", "end": "19:10", "className": "Aikido", "ageGroup": "7-9 ani", "instructorId": "zacharia-hamzi" },
+    { "id": "art-aikido-tue-1920", "locationId": "art", "disciplineId": "aikido", "day": 2, "start": "19:20", "end": "20:20", "className": "Aikido", "ageGroup": "9-14 ani", "instructorId": "zacharia-hamzi" },
+    { "id": "art-aikido-thu-1700", "locationId": "art", "disciplineId": "aikido", "day": 4, "start": "17:00", "end": "18:00", "className": "Aikido", "ageGroup": "5-7 ani", "instructorId": "zacharia-hamzi" },
+    { "id": "art-aikido-thu-1810", "locationId": "art", "disciplineId": "aikido", "day": 4, "start": "18:10", "end": "19:10", "className": "Aikido", "ageGroup": "7-9 ani", "instructorId": "zacharia-hamzi" },
+    { "id": "art-aikido-thu-1920", "locationId": "art", "disciplineId": "aikido", "day": 4, "start": "19:20", "end": "20:20", "className": "Aikido", "ageGroup": "9-14 ani", "instructorId": "zacharia-hamzi" },
+
+    { "id": "art-jj-mon-1700", "locationId": "art", "disciplineId": "ju-jitsu", "day": 1, "start": "17:00", "end": "18:00", "className": "Ju-Jitsu copii", "ageGroup": "2-5 ani", "instructorId": "bruno-demaille" },
+    { "id": "art-jj-mon-1810", "locationId": "art", "disciplineId": "ju-jitsu", "day": 1, "start": "18:10", "end": "19:20", "className": "Ju-Jitsu copii", "ageGroup": "6-13 ani", "instructorId": "bruno-demaille" },
+    { "id": "art-jj-mon-1920", "locationId": "art", "disciplineId": "ju-jitsu", "day": 1, "start": "19:20", "end": "20:20", "className": "Ju-Jitsu adulți", "ageGroup": "Adulți", "instructorId": "bruno-demaille" },
+    { "id": "art-jj-wed-1700", "locationId": "art", "disciplineId": "ju-jitsu", "day": 3, "start": "17:00", "end": "18:00", "className": "Ju-Jitsu copii", "ageGroup": "2-5 ani", "instructorId": "bruno-demaille" },
+    { "id": "art-jj-wed-1810", "locationId": "art", "disciplineId": "ju-jitsu", "day": 3, "start": "18:10", "end": "19:10", "className": "Ju-Jitsu copii", "ageGroup": "6-13 ani", "instructorId": "bruno-demaille" },
+    { "id": "art-jj-wed-1920", "locationId": "art", "disciplineId": "ju-jitsu", "day": 3, "start": "19:20", "end": "20:20", "className": "Ju-Jitsu adulți", "ageGroup": "Adulți", "instructorId": "bruno-demaille" },
+    { "id": "art-jj-sat-1000", "locationId": "art", "disciplineId": "ju-jitsu", "day": 6, "start": "10:00", "end": "11:00", "className": "Ju-Jitsu copii", "ageGroup": "2-5 ani", "instructorId": "bruno-demaille" },
+    { "id": "art-jj-sat-1130", "locationId": "art", "disciplineId": "ju-jitsu", "day": 6, "start": "11:30", "end": "12:30", "className": "Ju-Jitsu copii", "ageGroup": "6-13 ani", "instructorId": "bruno-demaille" },
+    { "id": "art-jj-sat-1300", "locationId": "art", "disciplineId": "ju-jitsu", "day": 6, "start": "13:00", "end": "14:00", "className": "Ju-Jitsu adulți", "ageGroup": "Adulți", "instructorId": "bruno-demaille" },
+    { "id": "art-jj-sat-1500", "locationId": "art", "disciplineId": "ju-jitsu", "day": 6, "start": "15:00", "end": "16:00", "className": "Ju-Jitsu copii", "ageGroup": "2-5 ani", "instructorId": "bruno-demaille" },
+
+    { "id": "art-sd-mon-1920", "locationId": "art", "disciplineId": "self-defence", "day": 1, "start": "19:20", "end": "20:20", "className": "Self-Defence", "ageGroup": "Adulți", "instructorId": "mitu-nicolae" },
+    { "id": "art-sd-wed-1920", "locationId": "art", "disciplineId": "self-defence", "day": 3, "start": "19:20", "end": "20:20", "className": "Self-Defence", "ageGroup": "Adulți", "instructorId": "mitu-nicolae" },
+
+    { "id": "art-mma-tue-2030", "locationId": "art", "disciplineId": "combat-mma", "day": 2, "start": "20:30", "end": "21:30", "className": "Pankration-MMA", "ageGroup": "Adulți", "instructorId": "zacharia-hamzi" },
+    { "id": "art-mma-thu-2030", "locationId": "art", "disciplineId": "combat-mma", "day": 4, "start": "20:30", "end": "21:30", "className": "Pankration-MMA", "ageGroup": "Adulți", "instructorId": "zacharia-hamzi" },
+    { "id": "art-mma-fri-1920", "locationId": "art", "disciplineId": "combat-mma", "day": 5, "start": "19:20", "end": "20:30", "className": "Pankration-MMA", "ageGroup": "Adulți", "instructorId": "zacharia-hamzi" },
+
+    { "id": "its-tue-1700", "locationId": "itsushin", "disciplineId": "aikido", "day": 2, "start": "17:00", "end": "18:00", "className": "Aikido copii", "ageGroup": "5-7 ani", "instructorId": "ion-alexandru" },
+    { "id": "its-tue-1800", "locationId": "itsushin", "disciplineId": "aikido", "day": 2, "start": "18:00", "end": "19:00", "className": "Aikido copii", "ageGroup": "7-9 ani", "instructorId": "ionut-moiseanu" },
+    { "id": "its-tue-1900", "locationId": "itsushin", "disciplineId": "aikido", "day": 2, "start": "19:00", "end": "20:30", "className": "Aikido copii", "ageGroup": "9-13 ani", "instructorId": "ionut-moiseanu" },
+    { "id": "its-tue-2030", "locationId": "itsushin", "disciplineId": "aikido", "day": 2, "start": "20:30", "end": "22:00", "className": "Aikido adulți", "ageGroup": "Adulți", "instructorId": "costin-istrate" },
+    { "id": "its-thu-1700", "locationId": "itsushin", "disciplineId": "aikido", "day": 4, "start": "17:00", "end": "18:00", "className": "Aikido copii", "ageGroup": "5-7 ani", "instructorId": "ionut-moiseanu" },
+    { "id": "its-thu-1800", "locationId": "itsushin", "disciplineId": "aikido", "day": 4, "start": "18:00", "end": "19:00", "className": "Aikido copii", "ageGroup": "7-9 ani", "instructorId": "ion-alexandru" },
+    { "id": "its-thu-1900", "locationId": "itsushin", "disciplineId": "aikido", "day": 4, "start": "19:00", "end": "20:30", "className": "Aikido copii", "ageGroup": "9-13 ani", "instructorId": "ion-alexandru" },
+    { "id": "its-thu-2030", "locationId": "itsushin", "disciplineId": "aikido", "day": 4, "start": "20:30", "end": "22:00", "className": "Aikido adulți", "ageGroup": "Adulți", "instructorId": "costin-istrate" },
+    { "id": "its-sat-1000", "locationId": "itsushin", "disciplineId": "aikido", "day": 6, "start": "10:00", "end": "11:30", "className": "Aikido Arme", "ageGroup": "Toate vârstele", "instructorId": "costin-istrate" },
+
+    { "id": "tos-mon-1750", "locationId": "toshibu", "disciplineId": "aikido", "day": 1, "start": "17:50", "end": "18:50", "className": "Aikido", "ageGroup": "5-8 ani", "instructorId": "ion-alexandru" },
+    { "id": "tos-mon-1900", "locationId": "toshibu", "disciplineId": "aikido", "day": 1, "start": "19:00", "end": "20:00", "className": "Aikido", "ageGroup": "9-14 ani", "instructorId": "codruta-stefan" },
+    { "id": "tos-wed-1750", "locationId": "toshibu", "disciplineId": "aikido", "day": 3, "start": "17:50", "end": "18:50", "className": "Aikido", "ageGroup": "5-8 ani", "instructorId": "ion-alexandru" },
+    { "id": "tos-wed-1900", "locationId": "toshibu", "disciplineId": "aikido", "day": 3, "start": "19:00", "end": "20:00", "className": "Aikido", "ageGroup": "9-14 ani", "instructorId": "codruta-stefan" }
+  ],
+  "pricing": [
+    {
+      "locationId": "art",
+      "locationName": "Art Dojo",
+      "currency": "RON",
+      "plans": [
+        {
+          "id": "art-silver",
+          "name": "Silver",
+          "price": 900,
+          "period": "lună",
+          "popular": false,
+          "features": ["2 antrenamente / săptămână", "Aikido / Ju-Jitsu / KickBox", "Karate / Self Defence / Judo", "Max 15 participanți"]
+        },
+        {
+          "id": "art-gold",
+          "name": "Gold",
+          "price": 1200,
+          "period": "lună",
+          "popular": true,
+          "features": ["3 antrenamente / săptămână", "Aikido / Ju-Jitsu / KickBox", "Karate / Self Defence / Judo", "Max 15 participanți"]
+        },
+        {
+          "id": "art-platinum",
+          "name": "Platinum",
+          "price": 1450,
+          "period": "lună",
+          "popular": false,
+          "features": ["4 antrenamente / săptămână", "Aikido / Ju-Jitsu / KickBox", "Karate / Self Defence / Judo", "Max 15 participanți"]
+        },
+        {
+          "id": "art-privat",
+          "name": "Oră privată",
+          "price": 400,
+          "period": "persoană",
+          "popular": false,
+          "features": ["Disciplină la alegere", "1-4 participanți"]
+        },
+        {
+          "id": "art-bebe",
+          "name": "Bebe Jujitsu",
+          "price": 500,
+          "period": "lună",
+          "popular": false,
+          "features": ["2-5 ani", "Sâmbătă 10:00 - 11:00", "Sâmbătă 15:00 - 16:00"]
+        }
+      ],
+      "custom": { "name": "Familie / Grup școlar", "text": "Contactați-ne oricând!" }
+    },
+    {
+      "locationId": "itsushin",
+      "locationName": "Itsushin Dojo",
+      "currency": "RON",
+      "plans": [
+        {
+          "id": "its-copii",
+          "name": "Aikido copii",
+          "price": 600,
+          "period": "lună",
+          "popular": false,
+          "features": ["Două antrenamente / săptămână", "5-16 ani"]
+        },
+        {
+          "id": "its-adulti",
+          "name": "Aikido adulți",
+          "price": 600,
+          "period": "lună",
+          "popular": false,
+          "features": ["Două antrenamente / săptămână", "+ 1 antrenament Arme sâmbăta"]
+        }
+      ],
+      "custom": null
+    },
+    {
+      "locationId": "toshibu",
+      "locationName": "Toshibu Dojo",
+      "currency": "RON",
+      "plans": [
+        {
+          "id": "tos-full",
+          "name": "Full",
+          "price": 350,
+          "period": "lună",
+          "popular": true,
+          "features": ["2 ședințe / săptămână"]
+        },
+        {
+          "id": "tos-half",
+          "name": "Half",
+          "price": 200,
+          "period": "lună",
+          "popular": false,
+          "features": ["1 ședință / săptămână"]
+        }
+      ],
+      "custom": null
+    }
+  ],
+
+  "discounts": {
+    "title": "Plata în avans",
+    "note": "La orice abonament",
+    "tiers": [
+      { "period": "3 luni", "discount": "10%" },
+      { "period": "6 luni", "discount": "15%" },
+      { "period": "1 an", "discount": "20%" }
+    ]
+  },
+
+  "resources": {
+    "documents": [
+      { "id": "doc-inscriere", "title": "Fișă de înscriere", "description": "Descărcați și completați documentul pentru a vă înscrie în cadrul clubului Aikibudo.", "url": "https://aikibudo.ro/wp-content/uploads/2017/09/Cerere-de-inscriere-Aikibudo.pdf", "type": "pdf", "category": "aikido" },
+      { "id": "doc-personala", "title": "Fișă personală", "description": "Completați documentul pentru a vă lua angajamentul de membru al clubului Aikibudo.", "url": "https://aikibudo.ro/wp-content/uploads/2017/09/Fisa-personala-Aikibudo.pdf", "type": "pdf", "category": "aikido" },
+      { "id": "doc-glosar", "title": "Glosar de termeni", "description": "Vocabularul pe care orice aikidoka trebuie să-l cunoască.", "url": "https://aikibudo.ro/wp-content/uploads/2017/09/Glosar-termeni.pdf", "type": "pdf", "category": "aikido" },
+      { "id": "doc-gdpr", "title": "Acord GDPR", "description": "Acordul de prelucrare a datelor cu caracter personal.", "url": "https://aikibudo.ro/wp-content/uploads/2023/12/ACORD-GDPR-2020.doc", "type": "doc", "category": "aikido" },
+      { "id": "doc-examen-adulti", "title": "Programă de examinare pentru adulți", "description": "Cerințele tehnice pentru examenele de grad, adulți.", "url": "https://aikibudo.ro/wp-content/uploads/2017/09/Programa-examinare-adulti.xls", "type": "xls", "category": "aikido" },
+      { "id": "doc-examen-copii", "title": "Programă de examinare pentru copii", "description": "Cerințele tehnice pentru examenele de grad, copii.", "url": "https://aikibudo.ro/wp-content/uploads/2017/09/Programa-examinare-Aikibudo.pdf", "type": "pdf", "category": "aikido" },
+      { "id": "doc-jj-inscriere", "title": "Fișă de înscriere Art Dojo", "description": "Descărcați și completați documentul pentru a vă înscrie în cadrul clubului Aikibudo.", "url": "https://aikibudo.ro/wp-content/uploads/2026/04/Cerere-de-inscriere-ART-DOJO.pdf", "type": "pdf", "category": "ju-jitsu" },
+      { "id": "doc-jj-personala", "title": "Fișă personală Art Dojo", "description": "Completați documentul pentru a vă lua angajamentul de membru al clubului Aikibudo.", "url": "https://aikibudo.ro/wp-content/uploads/2026/04/Fisa-personala-Aikibudo-ART-DOJO.pdf", "type": "pdf", "category": "ju-jitsu" },
+      { "id": "doc-jj-memento", "title": "Memento Ju-Jutsu Tradițional", "description": "Memento tehnic pentru practicanții de Ju-Jutsu tradițional.", "url": "https://aikibudo.ro/wp-content/uploads/2026/06/MEMENTO-JU-JUTSU-TRADITIONAL.pdf", "type": "pdf", "category": "ju-jitsu" }
+    ],
+    "links": [
+      { "label": "Fundația Română de Aikido-Aikikai", "url": "http://www.aikikai.ro/", "category": "aikido", "group": "Site-uri oficiale" },
+      { "label": "Federația Română de Aikido", "url": "http://www.aikido-romania.eu/", "category": "aikido", "group": "Site-uri oficiale" },
+      { "label": "Aikikai Foundation Tokyo", "url": "http://www.aikikai.or.jp/", "category": "aikido", "group": "Site-uri oficiale" },
+      { "label": "International Aikido Federation", "url": "http://aikido-international.org/", "category": "aikido", "group": "Site-uri oficiale" },
+      { "label": "Aikikai România", "url": "http://aikikairomania.ro/", "category": "aikido", "group": "Site-uri oficiale" },
+      { "label": "Slovenian Aikikai Federation", "url": "http://aikikai.si/", "category": "aikido", "group": "Site-uri oficiale" },
+      { "label": "Ukrainian Aikido Aikikai Association", "url": "http://www.aikido.relc.com/", "category": "aikido", "group": "Site-uri oficiale" },
+      { "label": "Aikikai Thailanda", "url": "http://www.thaiaikikai.com/", "category": "aikido", "group": "Site-uri oficiale" },
+      { "label": "Auckland Aikikai", "url": "http://www.aikikai.co.nz/", "category": "aikido", "group": "Site-uri oficiale" },
+      { "label": "Aikikai Malaysia", "url": "http://www.aikikaimy.com/", "category": "aikido", "group": "Site-uri oficiale" },
+      { "label": "Aikido Republica Moldova", "url": "http://aikidomoldova.wordpress.com/", "category": "aikido", "group": "Site-uri oficiale" },
+      { "label": "The Aikido FAQ", "url": "http://www.aikidofaq.com/", "category": "aikido", "group": "Site-uri oficiale" },
+      { "label": "Aikido Journal", "url": "http://www.aikidojournal.com/", "category": "aikido", "group": "Site-uri oficiale" },
+      { "label": "Aikiweb", "url": "http://www.aikiweb.com/", "category": "aikido", "group": "Site-uri oficiale" },
+      { "label": "Aikido Online", "url": "http://www.aikidoonline.com/", "category": "aikido", "group": "Site-uri oficiale" },
+      { "label": "Aikido Jurnal RO", "url": "http://www.aikido-jurnal.ro/", "category": "aikido", "group": "Site-uri oficiale" },
+      { "label": "RAAF - Arad branch: Ara Mitama Dojo", "url": "https://sites.google.com/site/aikikaiarad/", "category": "aikido", "group": "Cluburi și asociații" },
+      { "label": "RAAF - Asociația Română de Aikido-Aikikai", "url": "http://aikidoarad.0fees.net/", "category": "aikido", "group": "Cluburi și asociații" },
+      { "label": "RAAF - Baia Mare branch", "url": "http://www.aikikai-baiamare.ro/", "category": "aikido", "group": "Cluburi și asociații" },
+      { "label": "RAAF - Rakuten Club București", "url": "http://aikido-rakuten.uv.ro/", "category": "aikido", "group": "Cluburi și asociații" },
+      { "label": "RAAF - Tenchi Club București", "url": "http://www.doshin.ro/tenchi_site/index.html", "category": "aikido", "group": "Cluburi și asociații" },
+      { "label": "RAAF - AS Aikido Aikikai Pitești", "url": "http://www.aikikai-pitesti.ro/", "category": "aikido", "group": "Cluburi și asociații" },
+      { "label": "RAAF - Reșița branch: Shuren Dojo", "url": "http://www.aikikai-resita.ro/", "category": "aikido", "group": "Cluburi și asociații" },
+      { "label": "RAAF - Club Doshin Association", "url": "http://www.doshin.ro/", "category": "aikido", "group": "Cluburi și asociații" },
+      { "label": "Maya Vital Dojo Oradea", "url": "http://www.info-aikido.ro/", "category": "aikido", "group": "Cluburi și asociații" },
+      { "label": "Aikido Club Constanța", "url": "http://www.aiki.ro/", "category": "aikido", "group": "Cluburi și asociații" },
+      { "label": "Wago-Kan Dojo Lugoj", "url": "http://www.aikikai-lugoj.ro/", "category": "aikido", "group": "Cluburi și asociații" },
+      { "label": "Académie Européenne de Ju Jitsu Traditionnel", "url": "https://www.aejt-jjquero.com/", "category": "ju-jitsu", "group": "Site-uri oficiale" },
+      { "label": "Federația Română de Arte Marțiale", "url": "https://fram.ro/", "category": "ju-jitsu", "group": "Site-uri oficiale" },
+      { "label": "World Ju-Jitsu Federation", "url": "https://www.wjjf.co.uk/", "category": "ju-jitsu", "group": "Site-uri oficiale" },
+      { "label": "Ju-Jitsu Traditionnel Liévin", "url": "https://www.facebook.com/p/Ju-Jitsu-Traditionnel-Li%C3%A9vin-100064789625561/", "category": "ju-jitsu", "group": "Site-uri oficiale" }
+    ],
+    "affiliations": [
+      { "abbr": "FRAA", "name": "Fundația Română de Aikido-Aikikai", "url": "https://www.aikikai.ro/index.php?lang=ro" },
+      { "abbr": "FRA", "name": "Federația Română de Aikido", "url": "https://www.aikido.ro/" },
+      { "abbr": "FRPA", "name": "Federația Română de Pankration Athlima", "url": "https://pangration.ro/" },
+      { "abbr": "FRAM", "name": "Federația Română de Arte Marțiale", "url": "https://fram.ro/" },
+      { "abbr": "Hombu Dojo Aikikai", "name": "Aikikai Foundation - Hombu Dojo", "url": "http://www.aikikai.or.jp/eng/" },
+      { "abbr": "IBA", "name": "International Budo Academy", "url": "https://www.budoacademy.org/" },
+      { "abbr": "FRTS", "name": "Federația Română de Tir Sportiv", "url": "https://frts.ro/" },
+      { "abbr": "FRSB", "name": "Federația Română de Schi și Biatlon", "url": "https://frschibiatlon.ro/" },
+      { "abbr": "SSI", "name": "Scuba Schools International", "url": "https://www.divessi.com/en/home" }
+    ]
+  },
+
+  "cta": {
+    "primary": { "label": "Vino la o lecție gratuită", "text": "Primul tău antrenament este complet GRATUIT!" },
+    "secondary": { "label": "Ai întrebări? Suntem aici să te ajutăm!", "text": "Hai la sală să ne cunoaștem!" }
+  }
+}

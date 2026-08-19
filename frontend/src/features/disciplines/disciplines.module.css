@@ -1,0 +1,329 @@
+.grid {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  min-height: 16rem;
+  padding: clamp(1.4rem, 2.5vw, 1.9rem);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition: border-color 0.18s var(--ease), transform 0.18s var(--ease),
+    box-shadow 0.18s var(--ease);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: var(--tone);
+  box-shadow: var(--shadow);
+}
+
+.card:hover .cardArrow {
+  transform: translateX(4px);
+}
+
+.cardCta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: auto;
+  padding-top: 1.4rem;
+  font-size: 0.95rem;
+  font-weight: 650;
+  color: var(--tone);
+}
+
+.cardArrow {
+  transition: transform 0.18s var(--ease);
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 2px;
+  background: var(--tone);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.35s var(--ease);
+}
+
+.card:hover::after {
+  transform: scaleX(1);
+}
+
+.cardKanji {
+  position: absolute;
+  top: -0.15em;
+  right: 0.05em;
+  font-family: var(--font-display);
+  font-size: 7rem;
+  line-height: 1;
+  color: var(--tone);
+  opacity: 0.10;
+  user-select: none;
+}
+
+.cardName {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.cardTagline {
+  margin-top: 0.2rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--tone);
+}
+
+.cardSummary {
+  margin-top: 0.85rem;
+  font-size: 0.9rem;
+  color: var(--text-dim);
+}
+
+.cardFoot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 1.15rem;
+}
+
+.cardSummary {
+  flex: 1;
+}
+
+/* --- Article --- */
+
+.articleHead {
+  position: relative;
+  overflow: hidden;
+  padding-block: clamp(3.5rem, 8vw, 6rem) clamp(2.5rem, 5vw, 4rem);
+  border-bottom: 1px solid var(--border-soft);
+}
+
+.articleKanji {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-45%);
+  font-family: var(--font-display);
+  font-size: clamp(10rem, 26vw, 22rem);
+  line-height: 0.8;
+  color: var(--tone);
+  opacity: 0.08;
+  user-select: none;
+  pointer-events: none;
+}
+
+.articleTitle {
+  font-family: var(--font-display);
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  font-weight: 400;
+}
+
+.articleTagline {
+  margin-top: 0.75rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--tone);
+}
+
+.articleSummary {
+  max-width: 52ch;
+  margin-top: 1.5rem;
+  font-size: 1.08rem;
+  color: var(--text-dim);
+}
+
+.quote {
+  max-width: 60ch;
+  margin-block: clamp(2.5rem, 5vw, 4rem);
+  padding-left: clamp(1.25rem, 3vw, 2.25rem);
+  border-left: 2px solid var(--tone);
+}
+
+.quoteText {
+  font-family: var(--font-display);
+  font-size: clamp(1.15rem, 2.2vw, 1.5rem);
+  line-height: 1.5;
+}
+
+.quoteAuthor {
+  margin-top: 1rem;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.sectionBlock + .sectionBlock {
+  margin-top: clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.sectionHeading {
+  margin-bottom: 1rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.35rem, 2.6vw, 1.85rem);
+  font-weight: 400;
+}
+
+/* --- Concepts (Irimi / Ukemi / …) --- */
+
+.concepts {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.conceptName {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.conceptJp {
+  margin-left: 0.5rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--tone);
+}
+
+.conceptBody {
+  margin-top: 0.7rem;
+  font-size: 0.9rem;
+  line-height: 1.7;
+  color: var(--text-dim);
+}
+
+.conceptList {
+  margin-top: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  font-size: 0.86rem;
+  color: var(--text-dim);
+}
+
+.conceptList li {
+  position: relative;
+  padding-left: 1.1rem;
+}
+
+.conceptList li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.62em;
+  width: 5px;
+  height: 1px;
+  background: var(--tone);
+}
+
+/* --- Bushido virtues --- */
+
+.virtues {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+
+.virtue {
+  padding: 1rem 1.1rem;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.virtueKanji {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  line-height: 1;
+  color: var(--tone);
+}
+
+.virtueRomaji {
+  margin-top: 0.6rem;
+  font-weight: 600;
+}
+
+.virtueMeaning {
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}
+
+/* --- Ordered / termed lists --- */
+
+.steps {
+  counter-reset: step;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.step {
+  counter-increment: step;
+  position: relative;
+  padding-left: 2.6rem;
+  color: var(--text-dim);
+}
+
+.step::before {
+  content: counter(step, decimal-leading-zero);
+  position: absolute;
+  left: 0;
+  top: 0.1em;
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--tone);
+}
+
+.terms {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+.termName {
+  font-weight: 600;
+}
+
+.termText {
+  color: var(--text-dim);
+  font-size: 0.94rem;
+}
+
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  color: var(--text-dim);
+}
+
+.checklist li {
+  position: relative;
+  padding-left: 1.6rem;
+}
+
+.checklist li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 0.6rem;
+  height: 0.6rem;
+  border: 1px solid var(--tone);
+  border-radius: 2px;
+  transform: rotate(45deg);
+}

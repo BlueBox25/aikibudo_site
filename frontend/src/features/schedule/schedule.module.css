@@ -1,0 +1,292 @@
+/* --- Filters --- */
+
+.filters {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 2.5rem;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.filterRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.filterLabel {
+  min-width: 5.5rem;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.chip {
+  padding: 0.4rem 0.95rem;
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  background: var(--bg);
+  font-size: 0.85rem;
+  color: var(--text-dim);
+  cursor: pointer;
+  transition: color 0.18s var(--ease), border-color 0.18s var(--ease),
+    background 0.18s var(--ease);
+}
+
+.chip:hover {
+  color: var(--text);
+  border-color: var(--text-faint);
+}
+
+.chip.on {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+/* --- Sala selector (discipline pages) --- */
+
+.tabs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.6rem;
+  margin-bottom: 2.25rem;
+}
+
+.tab {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.15rem;
+  min-height: 64px;
+  padding: 0.85rem 1.15rem;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  text-align: left;
+  cursor: pointer;
+  transition: border-color 0.18s var(--ease), background 0.18s var(--ease),
+    transform 0.18s var(--ease), box-shadow 0.18s var(--ease);
+}
+
+.tab:hover {
+  transform: translateY(-2px);
+  border-color: var(--text);
+  box-shadow: var(--shadow);
+}
+
+.tabName {
+  font-size: 1rem;
+  font-weight: 650;
+}
+
+.tabAddr {
+  font-size: 0.8rem;
+  color: var(--text-faint);
+}
+
+.tabOn {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #fff;
+}
+
+.tabOn:hover {
+  border-color: var(--accent-hover);
+  background: var(--accent-hover);
+}
+
+.tabOn .tabAddr {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+/* --- Week: one row per day, no horizontal scrolling --- */
+
+.week {
+  display: flex;
+  flex-direction: column;
+}
+
+.day {
+  display: grid;
+  grid-template-columns: 9.5rem 1fr;
+  gap: 1.5rem 2rem;
+  padding-block: 1.6rem;
+  border-top: 1px solid var(--border);
+}
+
+.day:last-child {
+  border-bottom: 1px solid var(--border);
+}
+
+.dayHead {
+  position: sticky;
+  top: 88px;
+  align-self: start;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.dayName {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  line-height: 1.1;
+}
+
+.dayCount {
+  font-size: 0.75rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.dayClasses {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(215px, 1fr));
+  gap: 0.75rem;
+}
+
+@media (max-width: 720px) {
+  .day {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
+    padding-block: 1.4rem;
+  }
+  .dayHead {
+    position: static;
+    flex-direction: row;
+    align-items: baseline;
+    gap: 0.6rem;
+  }
+  .dayClasses {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Class card --- */
+
+.class {
+  position: relative;
+  padding: 0.85rem 1rem 0.9rem 1.15rem;
+  border: 1px solid var(--border-soft);
+  border-radius: var(--radius);
+  background: var(--surface);
+  transition: border-color 0.18s var(--ease), background 0.18s var(--ease),
+    box-shadow 0.18s var(--ease);
+}
+
+.class:hover {
+  border-color: var(--border);
+  background: var(--surface-2);
+  box-shadow: var(--shadow);
+}
+
+.class::before {
+  content: '';
+  position: absolute;
+  inset: 0.85rem auto 0.85rem 0;
+  width: 3px;
+  border-radius: 0 3px 3px 0;
+  background: var(--tone, var(--accent));
+}
+
+.classTime {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 650;
+  font-variant-numeric: tabular-nums;
+}
+
+.classTimeEnd {
+  font-weight: 400;
+  color: var(--text-faint);
+}
+
+.className {
+  margin-top: 0.3rem;
+  font-size: 0.97rem;
+  font-weight: 550;
+  line-height: 1.3;
+}
+
+.classMeta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.classAge {
+  padding: 0.1rem 0.5rem;
+  border: 1px solid var(--border);
+  border-radius: 99px;
+  background: var(--bg-elev);
+  font-size: 0.74rem;
+  color: var(--text-dim);
+}
+
+.classInstructor {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  transition: color 0.18s var(--ease);
+}
+
+.classInstructor:hover {
+  color: var(--accent);
+}
+
+.classWhere {
+  margin-top: 0.15rem;
+  font-size: 0.76rem;
+  color: var(--text-faint);
+}
+
+/* --- Empty / legend / hint --- */
+
+.empty {
+  padding: 3.5rem 1rem;
+  border: 1px dashed var(--border);
+  border-radius: var(--radius);
+  text-align: center;
+  color: var(--text-faint);
+}
+
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+  margin-top: 1.75rem;
+  font-size: 0.8rem;
+  color: var(--text-dim);
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.legendSwatch {
+  width: 12px;
+  height: 3px;
+  border-radius: 2px;
+  background: var(--tone);
+}
+
+.hint {
+  margin-top: 1.5rem;
+  padding-left: 0.9rem;
+  border-left: 2px solid var(--accent);
+  font-size: 0.85rem;
+  color: var(--text-dim);
+}

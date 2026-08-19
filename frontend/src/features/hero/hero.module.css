@@ -1,0 +1,141 @@
+/* Black hero band — the page itself is white, so black reads as a
+   deliberate surface rather than a dark theme. */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background: var(--inverse-bg);
+  color: var(--inverse-text);
+  padding-block: clamp(4.5rem, 12vw, 8.5rem) clamp(3.5rem, 8vw, 5.5rem);
+}
+
+.bg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.bgImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 30%;
+  opacity: 0.32;
+  filter: grayscale(1) contrast(1.15);
+}
+
+.bg::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    100deg,
+    var(--inverse-bg) 18%,
+    rgba(16, 14, 14, 0.82) 48%,
+    rgba(16, 14, 14, 0.55) 100%
+  );
+}
+
+.kanji {
+  position: absolute;
+  right: -0.06em;
+  top: 50%;
+  z-index: 1;
+  transform: translateY(-50%);
+  font-family: var(--font-display);
+  font-size: clamp(14rem, 30vw, 28rem);
+  line-height: 0.8;
+  color: var(--accent);
+  opacity: 0.13;
+  user-select: none;
+  pointer-events: none;
+}
+
+.inner {
+  position: relative;
+  z-index: 2;
+  max-width: 46rem;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  margin-bottom: 1.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--inverse-dim);
+}
+
+.eyebrowDot {
+  width: 1.9rem;
+  height: 2px;
+  background: var(--accent);
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2.6rem, 7vw, 4.9rem);
+  font-weight: 400;
+  line-height: 1.03;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+
+.titleAccent {
+  color: var(--accent-bright);
+}
+
+.lede {
+  max-width: 42ch;
+  margin-top: 1.5rem;
+  font-size: clamp(1.02rem, 1.9vw, 1.18rem);
+  color: var(--inverse-dim);
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2.25rem;
+}
+
+.stats {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: clamp(3.5rem, 8vw, 5rem);
+  padding-top: 2.25rem;
+  border-top: 1px solid var(--inverse-border);
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.statValue {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  line-height: 1;
+  color: #fff;
+}
+
+.statLabel {
+  font-size: 0.74rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--inverse-faint);
+}
+
+@media (max-width: 640px) {
+  .stats {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.75rem 1rem;
+  }
+}
