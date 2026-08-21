@@ -1,16 +1,18 @@
 import { Button, Container } from '../../ui'
-import heroImage from '../../assets/hero.png'
+import heroImage from '../../assets/dojo-hero.jpg'
 import styles from './hero.module.css'
 
 export default function Hero({ site }) {
   return (
     <section className={styles.hero}>
-      <div className={styles.bg} aria-hidden="true">
-        <img className={styles.bgImage} src={heroImage} alt="" />
+      <div className={styles.bg}>
+        <img
+          className={styles.bgImage}
+          src={heroImage}
+          alt="Proiecție simultană a doi parteneri, în dojo"
+          fetchPriority="high"
+        />
       </div>
-      <span className={styles.kanji} aria-hidden="true">
-        合
-      </span>
 
       <Container>
         <div className={styles.inner}>

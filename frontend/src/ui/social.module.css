@@ -1,0 +1,88 @@
+/* Brand-filled buttons, matching the WhatsApp one, so the whole contact row
+   reads as a set. Each network keeps its own official colour. */
+.link {
+  --brand: var(--text);
+  --brand-hover: var(--text);
+  --brand-glow: rgba(20, 17, 16, 0.4);
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  min-height: 40px;
+  padding: 0.3rem 1rem 0.3rem 0.8rem;
+  border: 2px solid transparent;
+  border-radius: 99px;
+  background: var(--brand);
+  color: #fff;
+  font-size: 0.86rem;
+  font-weight: 700;
+  white-space: nowrap;
+  transition: filter 0.16s var(--ease), transform 0.16s var(--ease),
+    box-shadow 0.16s var(--ease);
+}
+
+.link:hover {
+  filter: brightness(1.08);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px -6px var(--brand-glow);
+}
+
+.link:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+.link:focus-visible {
+  outline: 2px solid var(--brand);
+  outline-offset: 3px;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+  flex: none;
+}
+
+/* --- Per network --- */
+
+.facebook {
+  --brand: #1877f2;
+  --brand-glow: rgba(24, 119, 242, 0.6);
+}
+
+.linkedin {
+  --brand: #0a66c2;
+  --brand-glow: rgba(10, 102, 194, 0.6);
+}
+
+/* Instagram has no single flat colour — its mark is a gradient. */
+.instagram {
+  --brand-glow: rgba(221, 42, 123, 0.6);
+  background: linear-gradient(45deg, #f58529 0%, #dd2a7b 45%, #8134af 72%, #515bd4 100%);
+}
+
+/* The footer keeps the quiet outlined treatment: a row of four brand-filled
+   buttons would shout louder than the content above it. The icons stay. */
+.onDark,
+.onDark.facebook,
+.onDark.instagram,
+.onDark.linkedin {
+  background: none;
+  background-image: none;
+  border-color: var(--inverse-border);
+  color: var(--inverse-dim);
+  font-weight: 600;
+}
+
+.onDark:hover {
+  filter: none;
+  border-color: var(--accent-bright);
+  background: rgba(221, 51, 51, 0.14);
+  color: #fff;
+  box-shadow: none;
+}
+
+.onDark:focus-visible {
+  outline-color: #fff;
+}

@@ -19,9 +19,14 @@
 }
 
 .logoMark {
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   flex: none;
+}
+
+/* Black ink on transparency, so inverting paints it white for dark surfaces. */
+.logoMarkDark {
+  filter: invert(1);
 }
 
 .logoText {
@@ -398,6 +403,13 @@
 
 .footerList a:hover {
   color: #fff;
+}
+
+.footerSocial {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin-top: 1rem;
 }
 
 .footerDojo {

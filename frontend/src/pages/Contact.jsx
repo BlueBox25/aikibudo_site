@@ -3,6 +3,8 @@ import { Button, Container, Section } from '../ui'
 import { useContent } from '../context/useContent'
 import { useDocumentTitle } from '../hooks/useDocumentTitle'
 import DojoMap from '../features/locations/DojoMap'
+import WhatsAppButton from '../ui/WhatsAppButton'
+import { telLink } from '../lib/phone'
 import PageHeader from './PageHeader'
 import RedirectBand from './RedirectBand'
 import styles from './pages.module.css'
@@ -31,14 +33,15 @@ export default function Contact() {
                 {contact.phones.map((phone) => (
                   <div key={phone.number} className={styles.bigContact}>
                     <span className={styles.bigContactName}>{phone.name}</span>
-                    <a
-                      className={styles.bigContactValue}
-                      href={`tel:${phone.number.replace(/\s/g, '')}`}
-                    >
+                    <a className={styles.bigContactValue} href={telLink(phone.number)}>
                       {phone.number}
                     </a>
                     {phone.whatsapp && (
-                      <span className={styles.bigContactTag}>WhatsApp disponibil</span>
+                      <WhatsAppButton
+                        phone={phone.number}
+                        size="sm"
+                        className={styles.bigContactWa}
+                      />
                     )}
                   </div>
                 ))}

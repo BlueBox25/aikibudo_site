@@ -8,7 +8,7 @@ export default function DisciplineCard({ discipline }) {
     <Link
       to={`/discipline/${discipline.slug}`}
       className={styles.card}
-      style={{ '--tone': toneFor(discipline.id) }}
+      style={{ '--tone': discipline.tone || toneFor(discipline.id) }}
     >
       {discipline.kanji && (
         <span className={styles.cardKanji} aria-hidden="true">

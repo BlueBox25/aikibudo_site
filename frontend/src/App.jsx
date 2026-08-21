@@ -14,8 +14,8 @@ import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
 
 /**
- * Every page reads from the same bootstrap payload, so the fetch is gated
- * once here rather than repeated per route.
+ * Every page reads from the same content document, so the fetch is gated once
+ * here rather than repeated per route.
  */
 function Gate({ children }) {
   const { loading, error, reload } = useContent()
@@ -32,29 +32,23 @@ function Gate({ children }) {
   return children
 }
 
-function AppRoutes() {
-  return (
-    <Routes>
-      <Route element={<Layout />}>
-        <Route index element={<Home />} />
-        <Route path="locatii" element={<Locations />} />
-        <Route path="locatii/:slug" element={<LocationDetail />} />
-        <Route path="discipline" element={<Disciplines />} />
-        <Route path="discipline/:slug" element={<DisciplineDetail />} />
-        <Route path="instructori" element={<Instructors />} />
-        <Route path="resurse" element={<Resources />} />
-        <Route path="contact" element={<Contact />} />
-        <Route path="*" element={<NotFound />} />
-      </Route>
-    </Routes>
-  )
-}
-
 export default function App() {
   return (
     <ContentProvider>
       <Gate>
-        <AppRoutes />
+        <Routes>
+          <Route element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="locatii" element={<Locations />} />
+            <Route path="locatii/:slug" element={<LocationDetail />} />
+            <Route path="discipline" element={<Disciplines />} />
+            <Route path="discipline/:slug" element={<DisciplineDetail />} />
+            <Route path="instructori" element={<Instructors />} />
+            <Route path="resurse" element={<Resources />} />
+            <Route path="contact" element={<Contact />} />
+            <Route path="*" element={<NotFound />} />
+          </Route>
+        </Routes>
       </Gate>
     </ContentProvider>
   )

@@ -1,3 +1,5 @@
+import WhatsAppButton from '../../ui/WhatsAppButton'
+import { telLink } from '../../lib/phone'
 import styles from './locations.module.css'
 
 export default function ContactList({ contacts }) {
@@ -6,10 +8,12 @@ export default function ContactList({ contacts }) {
       {contacts.map((contact) => (
         <div key={contact.number} className={styles.contact}>
           <span className={styles.contactName}>{contact.name}</span>
-          <a className={styles.contactNumber} href={`tel:${contact.number.replace(/\s/g, '')}`}>
+          <a className={styles.contactNumber} href={telLink(contact.number)}>
             {contact.number}
           </a>
-          {contact.whatsapp && <span className={styles.contactWa}>WhatsApp disponibil</span>}
+          {contact.whatsapp && (
+            <WhatsAppButton phone={contact.number} size="sm" className={styles.contactWa} />
+          )}
         </div>
       ))}
     </div>

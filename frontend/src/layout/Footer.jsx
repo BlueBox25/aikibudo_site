@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Container } from '../ui'
+import SocialLink from '../ui/SocialLink'
+import { telLink } from '../lib/phone'
 import { useContent } from '../context/useContent'
 import Logo from './Logo'
 import styles from './layout.module.css'
@@ -16,7 +18,7 @@ export default function Footer() {
       <Container>
         <div className={styles.footerGrid}>
           <div>
-            <Logo />
+            <Logo onDark />
             <p className={styles.footerTagline}>{site.tagline}</p>
           </div>
 
@@ -50,20 +52,25 @@ export default function Footer() {
             <ul className={styles.footerList}>
               {site.contact.phones.map((phone) => (
                 <li key={phone.number}>
-                  <a href={`tel:${phone.number.replace(/\s/g, '')}`}>{phone.number}</a>
+                  <a href={telLink(phone.number)}>{phone.number}</a>
                 </li>
               ))}
               <li>
                 <a href={`mailto:${site.contact.email}`}>{site.contact.email}</a>
               </li>
-              {site.social.map((item) => (
-                <li key={item.url}>
-                  <a href={item.url} target="_blank" rel="noreferrer noopener">
-                    {item.label}
-                  </a>
-                </li>
-              ))}
             </ul>
+
+            <div className={styles.footerSocial}>
+              {site.social.map((item) => (
+                <SocialLink
+                  key={item.url}
+                  platform={item.platform}
+                  url={item.url}
+                  label={item.label}
+                  tone="dark"
+                />
+              ))}
+            </div>
           </div>
         </div>
 

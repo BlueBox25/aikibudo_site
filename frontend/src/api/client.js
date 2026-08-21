@@ -1,20 +1,17 @@
-const BASE = import.meta.env.VITE_API_URL ?? '/api'
+/**
+ * The site is fully static: content lives in public/content.json and is fetched
+ * once at start-up. No API, no server — the file is served straight from the CDN
+ * alongside the rest of the build.
+ */
+const CONTENT_URL = import.meta.env.VITE_CONTENT_URL ?? '/content.json'
 
-export async function get(path, params) {
-  const url = new URL(`${BASE}${path}`, window.location.origin)
-  Object.entries(params ?? {}).forEach(([key, value]) => {
-    if (value !== undefined && value !== null && value !== '') {
-      url.searchParams.set(key, value)
-    }
-  })
-
-  const response = await fetch(url, { headers: { Accept: 'application/json' } })
+export async function fetchContent() {
+  const response = await fetch(CONTENT_URL, { headers: { Accept: 'application/json' } })
   if (!response.ok) {
-    const detail = await response.json().catch(() => ({}))
-    throw new Error(detail.message ?? `Cererea a eșuat (${response.status})`)
+    throw new Error(`Nu am putut încărca conținutul (${response.status})`)
   }
   return response.json()
 }
 
-/** Everything the site needs on first paint, in one round trip. */
-export const fetchBootstrap = () => get('/bootstrap')
+// Kept under the old name so the content provider needs no change.
+export const fetchBootstrap = fetchContent

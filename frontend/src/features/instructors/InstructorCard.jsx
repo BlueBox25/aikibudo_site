@@ -1,4 +1,4 @@
-import { Badge, Card } from '../../ui'
+import { Badge } from '../../ui'
 import styles from './instructors.module.css'
 
 const initials = (name) =>
@@ -9,58 +9,64 @@ const initials = (name) =>
     .map((part) => part[0])
     .join('')
 
-export default function InstructorCard({ instructor, locations }) {
-  const { name, title, specialty, ranks, bio, phone, whatsapp, dojos, social } = instructor
+const MAX_RANKS = 2
+
+export default function InstructorCard({ instructor, locations, onOpen }) {
+  const { name, title, specialty, ranks = [], dojos = [], photo } = instructor
+  const hidden = ranks.length - MAX_RANKS
 
   return (
-    <Card interactive className={styles.card}>
+    <button type="button" className={styles.card} onClick={onOpen}>
       <div className={styles.head}>
-        <span className={styles.avatar} aria-hidden="true">
-          {initials(name)}
+        {photo ? (
+          <img
+            className={styles.photo}
+            src={photo}
+            alt={`${title} ${name}`}
+            width="104"
+            height="139"
+            loading="lazy"
+          />
+        ) : (
+          <span className={styles.avatar} aria-hidden="true">
+            {initials(name)}
+          </span>
+        )}
+
+        <span className={styles.headText}>
+          <span className={styles.title}>{title}</span>
+          <span className={styles.name}>{name}</span>
+          {specialty && <span className={styles.specialty}>{specialty}</span>}
         </span>
-        <div>
-          <p className={styles.title}>{title}</p>
-          <h3 className={styles.name}>{name}</h3>
-        </div>
       </div>
 
-      {specialty && <p className={styles.specialty}>{specialty}</p>}
-
-      <ul className={styles.ranks}>
-        {ranks.map((rank) => (
-          <li key={rank}>{rank}</li>
-        ))}
-      </ul>
-
-      {bio && <p className={styles.bio}>{bio}</p>}
+      {ranks.length > 0 && (
+        <ul className={styles.ranks}>
+          {ranks.slice(0, MAX_RANKS).map((rank) => (
+            <li key={rank}>{rank}</li>
+          ))}
+          {hidden > 0 && (
+            <li className={styles.ranksMore}>
+              + încă {hidden} {hidden === 1 ? 'atestat' : 'atestate'}
+            </li>
+          )}
+        </ul>
+      )}
 
       {dojos.length > 0 && (
-        <div className={styles.dojos}>
+        <span className={styles.dojos}>
           {dojos.map((id) => (
             <Badge key={id}>{locations[id]?.name ?? id}</Badge>
           ))}
-        </div>
+        </span>
       )}
 
-      <div className={styles.foot}>
-        {phone && (
-          <a className={styles.phone} href={`tel:${phone.replace(/\s/g, '')}`}>
-            {phone}
-            {whatsapp && ' · WhatsApp'}
-          </a>
-        )}
-        {social.length > 0 && (
-          <span className={styles.social}>
-            {social.map((item) => (
-              <a key={item.url} href={item.url} target="_blank" rel="noreferrer noopener">
-                {item.platform === 'facebook' && 'Facebook'}
-                {item.platform === 'instagram' && 'Instagram'}
-                {item.platform === 'linkedin' && 'LinkedIn'}
-              </a>
-            ))}
-          </span>
-        )}
-      </div>
-    </Card>
+      <span className={styles.cardCta}>
+        Vezi detalii
+        <span className={styles.cardArrow} aria-hidden="true">
+          →
+        </span>
+      </span>
+    </button>
   )
 }

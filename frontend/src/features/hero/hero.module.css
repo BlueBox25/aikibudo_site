@@ -4,9 +4,16 @@
 .hero {
   position: relative;
   overflow: hidden;
+  min-height: min(78vh, 720px);
+  display: flex;
+  align-items: center;
   background: var(--inverse-bg);
   color: var(--inverse-text);
-  padding-block: clamp(4.5rem, 12vw, 8.5rem) clamp(3.5rem, 8vw, 5.5rem);
+  padding-block: clamp(4rem, 10vw, 7rem) clamp(3rem, 7vw, 5rem);
+}
+
+.hero > :global(div) {
+  width: 100%;
 }
 
 .bg {
@@ -19,36 +26,41 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 30%;
-  opacity: 0.32;
-  filter: grayscale(1) contrast(1.15);
+  object-position: center 42%;
+  /* The photo is already near-monochrome; forcing grayscale keeps red as the
+     only colour on the page. */
+  filter: grayscale(1) contrast(1.06) brightness(0.94);
 }
 
+/* Two scrims: one across, so the headline has contrast over the bright dojo
+   wall, and one up from the bottom so the stats row stays readable. */
 .bg::after {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    100deg,
-    var(--inverse-bg) 18%,
-    rgba(16, 14, 14, 0.82) 48%,
-    rgba(16, 14, 14, 0.55) 100%
-  );
+  background:
+    linear-gradient(
+      100deg,
+      var(--inverse-bg) 0%,
+      rgba(16, 14, 14, 0.96) 30%,
+      rgba(16, 14, 14, 0.88) 52%,
+      rgba(16, 14, 14, 0.58) 72%,
+      rgba(16, 14, 14, 0.4) 100%
+    ),
+    linear-gradient(to bottom, rgba(16, 14, 14, 0.35) 0%, transparent 22%, rgba(16, 14, 14, 0.8) 100%);
 }
 
-.kanji {
-  position: absolute;
-  right: -0.06em;
-  top: 50%;
-  z-index: 1;
-  transform: translateY(-50%);
-  font-family: var(--font-display);
-  font-size: clamp(14rem, 30vw, 28rem);
-  line-height: 0.8;
-  color: var(--accent);
-  opacity: 0.13;
-  user-select: none;
-  pointer-events: none;
+@media (max-width: 900px) {
+  /* Narrow screens crop to the centre figure, so the scrim covers the whole
+     width instead of fading out to the right. */
+  .bg::after {
+    background: linear-gradient(
+      to bottom,
+      rgba(16, 14, 14, 0.86) 0%,
+      rgba(16, 14, 14, 0.74) 45%,
+      rgba(16, 14, 14, 0.92) 100%
+    );
+  }
 }
 
 .inner {
@@ -76,6 +88,7 @@
 }
 
 .title {
+  text-shadow: 0 2px 24px rgba(16, 14, 14, 0.5);
   font-family: var(--font-display);
   font-size: clamp(2.6rem, 7vw, 4.9rem);
   font-weight: 400;

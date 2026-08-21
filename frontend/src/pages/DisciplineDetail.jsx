@@ -52,7 +52,7 @@ export default function DisciplineDetail() {
   })
 
   return (
-    <div style={{ '--tone': toneFor(discipline.id) }}>
+    <div style={{ '--tone': discipline.tone || toneFor(discipline.id) }}>
       <header className={styles.articleHead}>
         {discipline.kanji && (
           <span className={styles.articleKanji} aria-hidden="true">

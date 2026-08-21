@@ -178,7 +178,7 @@
         {
           "name": "Sensei Ionuț Moiseanu",
           "number": "0758 385 911",
-          "whatsapp": true
+          "whatsapp": false
         },
         {
           "name": "Sensei Ion Ion Alexandru",
@@ -641,7 +641,8 @@
           "platform": "facebook",
           "url": "https://www.facebook.com/nicolae.mitu.9"
         }
-      ]
+      ],
+      "photo": "/instructori/shihan_mitu_nicolae.jpg"
     },
     {
       "id": "bruno-demaille",
@@ -668,7 +669,8 @@
           "platform": "linkedin",
           "url": "https://www.linkedin.com/in/bruno-demaille-025a9b11b/"
         }
-      ]
+      ],
+      "photo": "/instructori/shihan_demaille_bruno.jpeg"
     },
     {
       "id": "costin-istrate",
@@ -690,7 +692,8 @@
       "dojos": [
         "itsushin"
       ],
-      "social": []
+      "social": [],
+      "photo": "/instructori/sensei_istrate_costin.jpg"
     },
     {
       "id": "codruta-stefan",
@@ -713,7 +716,8 @@
       "dojos": [
         "toshibu"
       ],
-      "social": []
+      "social": [],
+      "photo": "/instructori/sensei_stefan_codruta_ilinca.jpg"
     },
     {
       "id": "vlad-badica",
@@ -732,7 +736,8 @@
       "phone": null,
       "whatsapp": false,
       "dojos": [],
-      "social": []
+      "social": [],
+      "photo": "/instructori/sensei_badica_vlad.jpg"
     },
     {
       "id": "zacharia-hamzi",
@@ -766,7 +771,8 @@
           "platform": "instagram",
           "url": "https://www.instagram.com/zachhamzi/"
         }
-      ]
+      ],
+      "photo": "/instructori/sensei_hamzi_zacharia.jpg"
     },
     {
       "id": "ionut-moiseanu",
@@ -785,11 +791,12 @@
       "bio": null,
       "bioTruncated": false,
       "phone": "0758 385 911",
-      "whatsapp": true,
+      "whatsapp": false,
       "dojos": [
         "itsushin"
       ],
-      "social": []
+      "social": [],
+      "photo": "/instructori/sensei_moiseanu_ionut.jpg"
     },
     {
       "id": "ion-alexandru",
@@ -817,7 +824,8 @@
           "platform": "facebook",
           "url": "https://www.facebook.com/profile.php?id=100069426692837"
         }
-      ]
+      ],
+      "photo": "/instructori/sensei_ion_ion_alexandru.jpg"
     }
   ],
   "days": [
@@ -1415,7 +1423,7 @@
         "id": "doc-inscriere",
         "title": "Fișă de înscriere",
         "description": "Descărcați și completați documentul pentru a vă înscrie în cadrul clubului Aikibudo.",
-        "url": "https://aikibudo.ro/wp-content/uploads/2017/09/Cerere-de-inscriere-Aikibudo.pdf",
+        "url": "/documente/aikido/Cerere-de-inscriere-Aikibudo.pdf",
         "type": "pdf",
         "category": "aikido"
       },
@@ -1423,7 +1431,7 @@
         "id": "doc-personala",
         "title": "Fișă personală",
         "description": "Completați documentul pentru a vă lua angajamentul de membru al clubului Aikibudo.",
-        "url": "https://aikibudo.ro/wp-content/uploads/2017/09/Fisa-personala-Aikibudo.pdf",
+        "url": "/documente/aikido/Fisa-personala-Aikibudo.pdf",
         "type": "pdf",
         "category": "aikido"
       },
@@ -1431,23 +1439,15 @@
         "id": "doc-glosar",
         "title": "Glosar de termeni",
         "description": "Vocabularul pe care orice aikidoka trebuie să-l cunoască.",
-        "url": "https://aikibudo.ro/wp-content/uploads/2017/09/Glosar-termeni.pdf",
+        "url": "/documente/aikido/Glosar-termeni.pdf",
         "type": "pdf",
-        "category": "aikido"
-      },
-      {
-        "id": "doc-gdpr",
-        "title": "Acord GDPR",
-        "description": "Acordul de prelucrare a datelor cu caracter personal.",
-        "url": "https://aikibudo.ro/wp-content/uploads/2023/12/ACORD-GDPR-2020.doc",
-        "type": "doc",
         "category": "aikido"
       },
       {
         "id": "doc-examen-adulti",
         "title": "Programă de examinare pentru adulți",
         "description": "Cerințele tehnice pentru examenele de grad, adulți.",
-        "url": "https://aikibudo.ro/wp-content/uploads/2017/09/Programa-examinare-adulti.xls",
+        "url": "/documente/aikido/Programa-examinare-adulti.xls",
         "type": "xls",
         "category": "aikido"
       },
@@ -1455,7 +1455,7 @@
         "id": "doc-examen-copii",
         "title": "Programă de examinare pentru copii",
         "description": "Cerințele tehnice pentru examenele de grad, copii.",
-        "url": "https://aikibudo.ro/wp-content/uploads/2017/09/Programa-examinare-Aikibudo.pdf",
+        "url": "/documente/aikido/Programa-examinare-Aikibudo.pdf",
         "type": "pdf",
         "category": "aikido"
       },
@@ -1463,7 +1463,7 @@
         "id": "doc-jj-inscriere",
         "title": "Fișă de înscriere Art Dojo",
         "description": "Descărcați și completați documentul pentru a vă înscrie în cadrul clubului Aikibudo.",
-        "url": "https://aikibudo.ro/wp-content/uploads/2026/04/Cerere-de-inscriere-ART-DOJO.pdf",
+        "url": "/documente/ju-jitsu/Cerere-de-inscriere-ART-DOJO.pdf",
         "type": "pdf",
         "category": "ju-jitsu"
       },
@@ -1471,7 +1471,7 @@
         "id": "doc-jj-personala",
         "title": "Fișă personală Art Dojo",
         "description": "Completați documentul pentru a vă lua angajamentul de membru al clubului Aikibudo.",
-        "url": "https://aikibudo.ro/wp-content/uploads/2026/04/Fisa-personala-Aikibudo-ART-DOJO.pdf",
+        "url": "/documente/ju-jitsu/Fisa-personala-Aikibudo-ART-DOJO.pdf",
         "type": "pdf",
         "category": "ju-jitsu"
       },
@@ -1479,7 +1479,7 @@
         "id": "doc-jj-memento",
         "title": "Memento Ju-Jutsu Tradițional",
         "description": "Memento tehnic pentru practicanții de Ju-Jutsu tradițional.",
-        "url": "https://aikibudo.ro/wp-content/uploads/2026/06/MEMENTO-JU-JUTSU-TRADITIONAL.pdf",
+        "url": "/documente/ju-jitsu/MEMENTO-JU-JUTSU-TRADITIONAL.pdf",
         "type": "pdf",
         "category": "ju-jitsu"
       }
