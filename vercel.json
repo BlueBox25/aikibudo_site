@@ -1,28 +1,23 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "buildCommand": "cd frontend && npm run build",
-  "outputDirectory": "frontend/dist",
-  "installCommand": "cd frontend && npm ci",
-  "framework": null,
+  "framework": "vite",
 
   "rewrites": [
-    {
-      "comment": "Rutele sunt gestionate de React Router. Vercel servește întâi fișierele reale (assets, PDF-uri, poze, content.json), iar restul ajunge la index.html.",
-      "source": "/(.*)",
-      "destination": "/index.html"
-    }
+    { "source": "/(.*)", "destination": "/index.html" }
   ],
 
   "headers": [
     {
-      "comment": "Numele fișierelor din build conțin un hash, deci pot fi cache-uite la nesfârșit.",
       "source": "/assets/(.*)",
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=31536000, immutable" }]
     },
     {
-      "comment": "Conținutul se schimbă la fiecare deploy și trebuie recitit, nu servit din cache.",
       "source": "/content.json",
       "headers": [{ "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }]
+    },
+    {
+      "source": "/(imagini|documente|instructori)/(.*)",
+      "headers": [{ "key": "Cache-Control", "value": "public, max-age=3600, must-revalidate" }]
     }
   ]
 }

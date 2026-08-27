@@ -4,9 +4,9 @@
 #
 #   ./install.sh           instalează ce lipsește, apoi pornește serverul de dezvoltare
 #   ./install.sh --setup   doar instalează
-#   ./install.sh --build   construiește versiunea de producție în frontend/dist
+#   ./install.sh --build   construiește versiunea de producție în dist/
 #
-# Nu există backend: conținutul se citește din frontend/public/content.json.
+# Nu există backend: conținutul se citește din public/content.json.
 
 set -euo pipefail
 cd "$(dirname "$0")"
@@ -36,19 +36,19 @@ NODE_MAJOR=$(node -v | sed 's/^v\([0-9]*\).*/\1/')
 ok "node $(node -v), npm $(npm -v)"
 
 bold "2/3  Instalez dependențele"
-if [ -d frontend/node_modules ]; then
+if [ -d node_modules ]; then
   ok "node_modules există"
 else
   info "durează un minut…"
-  if [ -f frontend/package-lock.json ]; then
-    ( cd frontend && npm ci --no-audit --no-fund )
+  if [ -f package-lock.json ]; then
+    npm ci --no-audit --no-fund
   else
-    ( cd frontend && npm install --no-audit --no-fund )
+    npm install --no-audit --no-fund
   fi
   ok "gata"
 fi
 
-[ -f frontend/public/content.json ] || die "Lipsește frontend/public/content.json — fără el site-ul nu are ce afișa."
+[ -f public/content.json ] || die "Lipsește public/content.json — fără el site-ul nu are ce afișa."
 
 case "$MODE" in
   setup)
@@ -58,17 +58,18 @@ case "$MODE" in
     ;;
   build)
     bold "3/3  Construiesc pentru producție"
-    ( cd frontend && npm run build )
+    npm run build
     echo
-    ok "rezultatul e în frontend/dist"
+    ok "rezultatul e în dist/"
     info "Vercel face asta singur la fiecare push"
     ;;
   dev)
     bold "3/3  Pornesc serverul de dezvoltare"
     echo
     echo "  Site:       http://localhost:$PORT"
+    echo "  Editor:     http://localhost:$PORT/admin"
     echo "  Oprești cu: Ctrl+C"
     echo
-    ( cd frontend && exec npm run dev -- --port "$PORT" )
+    exec npm run dev -- --port "$PORT"
     ;;
 esac

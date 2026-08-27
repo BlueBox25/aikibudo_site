@@ -39,10 +39,11 @@ lerna-debug.log*
 Thumbs.db
 desktop.ini
 
-# NOTĂ: frontend/public/content.json ESTE urmărit intenționat — el este
+# NOTĂ: public/content.json ESTE urmărit intenționat — el este
 # conținutul site-ului (texte, orar, prețuri). Se editează direct și se
-# publică printr-un commit. La fel documentele din frontend/public/documente/
-# și pozele din frontend/public/instructori/.
+# publică printr-un commit. La fel documentele din public/documente/
+# și pozele din public/instructori/.
 
-# Rollback copy written by the dev content editor before each save.
-frontend/public/content.json.bak
+# Rollback copy written by the dev content editor before each save. It lives
+# outside public/ so the build never publishes it.
+.content-backup.json

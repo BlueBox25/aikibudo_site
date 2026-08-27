@@ -6,6 +6,9 @@ import { docHash } from './src/admin/docHash.js'
 
 const CONTENT_PATH = fileURLToPath(new URL('./public/content.json', import.meta.url))
 const UPLOAD_DIR = fileURLToPath(new URL('./public/imagini/', import.meta.url))
+// Outside public/ on purpose: Vite copies that folder verbatim into the build,
+// so a backup kept there would be published alongside the site.
+const BACKUP_PATH = fileURLToPath(new URL('./.content-backup.json', import.meta.url))
 
 const ALLOWED_IMAGES = { '.jpg': 1, '.jpeg': 1, '.png': 1, '.webp': 1, '.avif': 1 }
 const MAX_UPLOAD = 8 * 1024 * 1024
@@ -81,7 +84,7 @@ function contentWriter() {
           }
 
           // Keep a rollback copy of what was there before this save.
-          await writeFile(`${CONTENT_PATH}.bak`, onDisk)
+          await writeFile(BACKUP_PATH, onDisk)
           await writeFile(CONTENT_PATH, `${JSON.stringify(parsed, null, 2)}\n`, 'utf8')
 
           res.setHeader('Content-Type', 'application/json')
