@@ -1,3 +1,4 @@
+import { Suspense, lazy } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { ContentProvider } from './context/ContentContext'
 import { useContent } from './context/useContent'
@@ -12,6 +13,13 @@ import Instructors from './pages/Instructors'
 import Resources from './pages/Resources'
 import Contact from './pages/Contact'
 import NotFound from './pages/NotFound'
+
+/**
+ * Dev-only content editor. `import.meta.env.DEV` is replaced by a literal at
+ * build time, so the dynamic import sits in dead code and Rollup drops the
+ * whole admin chunk from production.
+ */
+const AdminPage = import.meta.env.DEV ? lazy(() => import('./admin/AdminPage')) : null
 
 /**
  * Every page reads from the same content document, so the fetch is gated once
@@ -37,6 +45,17 @@ export default function App() {
     <ContentProvider>
       <Gate>
         <Routes>
+          {AdminPage && (
+            <Route
+              path="admin"
+              element={
+                <Suspense fallback={<LoadingState />}>
+                  <AdminPage />
+                </Suspense>
+              }
+            />
+          )}
+
           <Route element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="locatii" element={<Locations />} />

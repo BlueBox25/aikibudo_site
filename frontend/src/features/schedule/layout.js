@@ -2,8 +2,10 @@ export const toMin = (hhmm) => Number(hhmm.slice(0, 2)) * 60 + Number(hhmm.slice
 export const fmt = (m) => `${String(Math.floor(m / 60)).padStart(2, '0')}:${String(m % 60).padStart(2, '0')}`
 
 // Tall enough that a 60-minute class fits time + name + instructor without
-// clipping; anything shorter has to drop the meta row instead.
-const PX_PER_MIN = 1.35
+// clipping, including when two parallel classes halve the column width and the
+// instructor's name has to wrap onto a second line. Anything shorter than that
+// drops the meta row instead.
+const PX_PER_MIN = 1.75
 const BREAK_PX = 38
 
 /**
@@ -60,7 +62,7 @@ export function minuteToY(axis, minute) {
 /**
  * Places a day's classes into side-by-side lanes.
  *
- * Classes only lose width when they genuinely clash: Ju-Jitsu adulți and
+ * Classes only lose width when they genuinely clash: Ju-Jutsu adulți and
  * Self-Defence both run 19:20–20:20 at Art Dojo, so those two split the column
  * while everything else stays full width.
  */

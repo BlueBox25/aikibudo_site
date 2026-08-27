@@ -2,7 +2,15 @@ import { Button, Container } from '../../ui'
 import heroImage from '../../assets/dojo-hero.jpg'
 import styles from './hero.module.css'
 
+const FALLBACK = {
+  title: 'Academia de Arte Marțiale',
+  accent: 'AikiBudo',
+  tagline: 'Tehnica se învață. Omul se formează.',
+}
+
 export default function Hero({ site }) {
+  const hero = site.hero ?? FALLBACK
+
   return (
     <section className={styles.hero}>
       <div className={styles.bg}>
@@ -22,10 +30,12 @@ export default function Hero({ site }) {
           </p>
 
           <h1 className={styles.title}>
-            Arte marțiale
+            {hero.title}
             <br />
-            tradiționale, <span className={styles.titleAccent}>practicate serios</span>
+            <span className={styles.titleAccent}>{hero.accent}</span>
           </h1>
+
+          {hero.tagline && <p className={styles.tagline}>{hero.tagline}</p>}
 
           <p className={styles.lede}>{site.intro}</p>
 

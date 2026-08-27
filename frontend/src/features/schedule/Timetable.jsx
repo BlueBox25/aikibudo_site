@@ -99,11 +99,11 @@ export default function Timetable({ entries, days, lookups, showLocation }) {
                     </span>
                     <span className={styles.blockName}>{entry.className}</span>
                     {compact ? (
-                      // No room for the age badge, but the surname still fits.
+                      // Half-width: the age badge does not fit beside the name,
+                      // but the name itself wraps onto two lines rather than
+                      // being cut down to a surname.
                       instructor && !veryShort && (
-                        <span className={styles.blockWhoCompact}>
-                          {instructor.name.split(' ').pop()}
-                        </span>
+                        <span className={styles.blockWhoCompact}>{instructor.name}</span>
                       )
                     ) : (
                       <span className={styles.blockMeta}>

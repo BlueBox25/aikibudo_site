@@ -6,7 +6,11 @@
 const CONTENT_URL = import.meta.env.VITE_CONTENT_URL ?? '/content.json'
 
 export async function fetchContent() {
-  const response = await fetch(CONTENT_URL, { headers: { Accept: 'application/json' } })
+  const response = await fetch(CONTENT_URL, {
+    headers: { Accept: 'application/json' },
+    // The dev editor rewrites this file, so a cached copy would hide the save.
+    cache: import.meta.env.DEV ? 'no-store' : 'default',
+  })
   if (!response.ok) {
     throw new Error(`Nu am putut încărca conținutul (${response.status})`)
   }

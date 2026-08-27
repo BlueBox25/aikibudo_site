@@ -11,7 +11,7 @@ import styles from '../features/resources/resources.module.css'
 
 const TABS = [
   { id: 'aikido', label: 'Aikido' },
-  { id: 'ju-jitsu', label: 'Ju-Jitsu' },
+  { id: 'ju-jitsu', label: 'Ju-Jutsu' },
 ]
 
 export default function Resources() {

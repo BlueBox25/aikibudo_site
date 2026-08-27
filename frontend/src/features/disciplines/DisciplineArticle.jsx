@@ -37,12 +37,25 @@ export default function DisciplineArticle({ discipline }) {
         />
 
         {quotes.map((quote) => (
-          <blockquote key={quote.text} className={styles.quote}>
-            <p className={styles.quoteText}>{quote.text}</p>
-            <footer className={styles.quoteAuthor}>
-              {quote.author}
-              {quote.role ? ` · ${quote.role}` : ''}
-            </footer>
+          <blockquote
+            key={quote.text}
+            className={quote.photo ? styles.quoteWithPhoto : styles.quote}
+          >
+            {quote.photo && (
+              <img
+                className={styles.quotePhoto}
+                src={quote.photo}
+                alt={quote.author ? `Portret ${quote.author}` : ''}
+                loading="lazy"
+              />
+            )}
+            <div className={styles.quoteBody}>
+              <p className={styles.quoteText}>{quote.text}</p>
+              <footer className={styles.quoteAuthor}>
+                {quote.author}
+                {quote.role ? ` · ${quote.role}` : ''}
+              </footer>
+            </div>
           </blockquote>
         ))}
 

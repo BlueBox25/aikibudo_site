@@ -7,7 +7,11 @@
     "founded": 1997,
     "city": "București",
     "tagline": "Scopul final al Artelor Marțiale Tradiționale este transformarea personală.",
-    "intro": "Aikido, Ju-Jitsu, Self-Defence și Combat MMA în trei dojo-uri din București. Din 1997.",
+    "hero": {
+      "title": "Academia de Arte Marțiale",
+      "accent": "AikiBudo",
+      "tagline": "Pe tatami nu căuta să întreci pe cineva,\nci să lași în urmă limitele pe care le aveai ieri."
+    },
     "mission": [
       "Scopul final al artelor martiale traditionale este transformarea personală. Obiectivul său este crearea ființelor umane integrate care sunt capabile să-și dovedească din plin înțelepciunea și capacitatea de a rezolva orice problemă.",
       "Artele martiale nu au ca scop lovirea oponenților cu pumnul sau cu piciorul ci mai degrabă folosirea energiei atacatorilor pentru a obține controlul asupra lor prin imobilizare sau pentru a-i proiecta la distanță. Noi punem accent pe mișcare și pe dinamica posturii.",
@@ -16,15 +20,15 @@
     ],
     "stats": [
       {
-        "value": "1997",
-        "label": "Anul înființării"
+        "value": "+5000",
+        "label": "Practicanți formați"
       },
       {
         "value": "3",
         "label": "Dojo-uri în București"
       },
       {
-        "value": "4",
+        "value": "5",
         "label": "Discipline"
       },
       {
@@ -38,14 +42,17 @@
         {
           "name": "Shihan Nicolae Mitu",
           "number": "0724 35 35 01",
-          "whatsapp": true
+          "whatsapp": true,
+          "floatingButton": true
         },
         {
           "name": "Shihan Bruno Demaille",
           "number": "0722 506 418",
-          "whatsapp": true
+          "whatsapp": true,
+          "floatingButton": false
         }
       ],
+      "whatsappMessage": "Bună ziua! Am văzut site-ul AikiBudo și aș dori informații despre antrenamente.",
       "hours": [
         {
           "days": "Luni - Vineri",
@@ -89,8 +96,43 @@
         "label": "Toshibu Dojo",
         "url": "https://www.instagram.com/toshibudojo/"
       }
-    ]
+    ],
+    "intro": ""
   },
+  "home": [
+    {
+      "id": "disciplines",
+      "visible": true,
+      "alt": false,
+      "kicker": "Ce practicăm",
+      "title": "Cinci discipline, un singur principiu",
+      "lede": "Nu forța brută, ci mișcarea, distanța și controlul. Fiecare disciplină abordează asta din alt unghi."
+    },
+    {
+      "id": "locations",
+      "visible": true,
+      "alt": true,
+      "kicker": "Unde ne găsești",
+      "title": "Trei dojo-uri în București",
+      "lede": "De la sala boutique din nord la dojo-ul tradițional unde a început totul în 1997."
+    },
+    {
+      "id": "mission",
+      "visible": true,
+      "alt": false,
+      "kicker": "Scopul nostru",
+      "title": "",
+      "lede": ""
+    },
+    {
+      "id": "redirect",
+      "visible": true
+    },
+    {
+      "id": "cta",
+      "visible": true
+    }
+  ],
   "locations": [
     {
       "id": "art",
@@ -107,7 +149,7 @@
       "blurb": "Art Dojo reprezintă cel mai nou și modern spațiu al Academiei Aikibudo, creat pentru a oferi o experiență boutique-dojo tuturor pasionaților de arte marțiale.",
       "description": [
         "Bine ai venit la ART DOJO – Strada Nicolae Caramfil nr. 49 te invită să îți descoperi și să îți îmbunătățești abilitățile în arte marțiale într-un mediu autentic japonez.",
-        "Aici, îți oferim acces la o gamă largă de arte marțiale sub îndrumarea unui colectiv de instructori recunoscuți pentru experiența lor vastă. De la AIKIDO la JU-JITSU, de la MMA la AUTOAPĂRARE, avem totul pentru a satisface fiecare pasionat."
+        "Aici, îți oferim acces la o gamă largă de arte marțiale sub îndrumarea unui colectiv de instructori recunoscuți pentru experiența lor vastă. De la AIKIDO la JU-JUTSU, de la MMA la AUTOAPĂRARE, avem totul pentru a satisface fiecare pasionat."
       ],
       "highlights": [
         "Instructori cu vechime și experiență internațională",
@@ -121,7 +163,8 @@
         "aikido",
         "ju-jitsu",
         "self-defence",
-        "combat-mma"
+        "combat-mma",
+        "kobudo"
       ],
       "contacts": [
         {
@@ -255,14 +298,15 @@
         {
           "text": "Calea războinicului a fost prost înțeleasă. Ea nu înseamnă să omori sau să distrugi pe alții. A lovi, a răni sau a distruge sunt cele mai rele lucruri pe care le poate face o ființă umană. Adevărata cale a războinicului este prevenirea acestui măcel, este Arta Păcii, puterea iubirii.",
           "author": "O-Sensei Morihei Ueshiba",
-          "role": "Fondator Aikido"
+          "role": "Fondator Aikido",
+          "photo": "/imagini/osensei1-244x300.jpg"
         }
       ],
       "sections": [
         {
           "heading": "Ce este Aikido",
           "body": [
-            "AIKIDO este o artă marțială japoneză dezvoltată de Morihei Ueshiba (adesea supranumit O-Sensei). La nivel pur fizic este o artă ce include tehnici (proiectări și luxări) derivate din Jujitsu și Kenjutsu. Aikido nu are ca scop lovirea oponenților cu pumnul sau cu piciorul ci mai degrabă folosirea energiei atacatorilor pentru a obține controlul asupra lor prin imobilizare sau pentru a-i proiecta la distanță. Aikido-ul pune accent pe mișcare și pe dinamica posturii."
+            "AIKIDO este o artă marțială japoneză dezvoltată de Morihei Ueshiba (adesea supranumit O-Sensei). La nivel pur fizic este o artă ce include tehnici (proiectări și luxări) derivate din Jujutsu și Kenjutsu. Aikido nu are ca scop lovirea oponenților cu pumnul sau cu piciorul ci mai degrabă folosirea energiei atacatorilor pentru a obține controlul asupra lor prin imobilizare sau pentru a-i proiecta la distanță. Aikido-ul pune accent pe mișcare și pe dinamica posturii."
           ]
         },
         {
@@ -282,7 +326,7 @@
         {
           "heading": "Mai multe despre Morihei Ueshiba",
           "body": [
-            "Încă de tânăr, Morihei Ueshiba a fost un practicant de excepție al artelor marțiale, un maestru al sabiei, al bastonului, al suliței precum și al jujitsu-ului. În același timp, O-Sensei avea și o puternică aspirație spirituală, meditând asupra zădărniciei unui drum bazat pe victoria asupra altora. Ueshiba a transformat măiestria sa tehnică în artele marțiale tradiționale într-o nouă artă marțială. Aikido-ul a apărut ca o artă fundamental diferită de cele care au precedat-o, de un rafinament și o putere remarcabile.",
+            "Încă de tânăr, Morihei Ueshiba a fost un practicant de excepție al artelor marțiale, un maestru al sabiei, al bastonului, al suliței precum și al jujutsu-ului. În același timp, O-Sensei avea și o puternică aspirație spirituală, meditând asupra zădărniciei unui drum bazat pe victoria asupra altora. Ueshiba a transformat măiestria sa tehnică în artele marțiale tradiționale într-o nouă artă marțială. Aikido-ul a apărut ca o artă fundamental diferită de cele care au precedat-o, de un rafinament și o putere remarcabile.",
             "În funcție de orientarea personală, practicanții vor găsi în Aikido o tehnică eficientă de auto-apărare, o cale de iluminare spirituală, sau o modalitate de obținere a sănătătii fizice sau a păcii minții. O-Sensei punea accent pe aspectele morale și spirituale ale acestei arte, în special pe dezvoltarea armoniei și a păcii.",
             "Această perspectivă este încă valabilă în Aikido-ul contemporan, deși diferitele stiluri existente astăzi pun mai mult sau mai puțin accent pe aspectele spirituale.",
             "Pe măsură ce Ueshiba înainta în vârstă, în tehnică și în spiritualitate, arta lui s-a schimbat și ea, devenind mai maleabilă și mai circulară. Tehnicile de lovire au devenit mai puțin importante iar predarea lor – formală. O expresie a artei sale era accentul puternic pus pe tehnicile așa-numite \"kokyu-nage\" sau \"aruncările prin forța respirației\" care sunt mai maleabile și mai armonioase, folosindu-se de mișcarea oponenților. Multe din aceste tehnici își au rădăcinile în metodele Daito-ryu, mai degrabă decât în tehnicile mult mai directe de luxare din stilul jujutsu."
@@ -396,8 +440,8 @@
     },
     {
       "id": "ju-jitsu",
-      "slug": "ju-jitsu",
-      "name": "Ju-Jitsu",
+      "slug": "ju-jutsu",
+      "name": "Ju-Jutsu",
       "kanji": "柔術",
       "romaji": "Jūjutsu",
       "tagline": "Arta supleței",
@@ -417,7 +461,8 @@
         {
           "text": "柔よく剛を制す (jū yoku gō wo sei su) — suplețea controlează forța.",
           "author": "Principiul jū",
-          "role": null
+          "role": null,
+          "photo": ""
         }
       ],
       "sections": [
@@ -430,19 +475,19 @@
           ]
         },
         {
-          "heading": "Principiile Ju-Jitsu (filozofie)",
+          "heading": "Principiile Ju-Jutsu (filozofie)",
           "body": [
             "Conceptul principal în jūjutsu este \"jū\", literalmente \"suplețe\", adică pentru a evita atacul frontal pentru a controla un adversar mai puternic, fără opoziție de forță. Această abordare se găsește în expresia 柔よく剛を制す (jū yoku gō wo sei su), ceea ce înseamnă \"suplețea controlează forța\".",
             "Acest principiu a dat naștere unui set de tehnici sofisticate pentru evitarea și canalizarea forței opuse și controlul adversarului prin deplasări, lovituri, proiectări și imobilizarea prin controlul punctelor vitale și articulațiilor.",
-            "Dar, mai presus de toate, practica și învățământul de Ju-Jitsu au ca scop, ca în toate artele marțiale tradiționale, o dezvoltare fizică și mentală, în spiritul pur al Bushido-ului (武士道), literalmente \"Calea războinicului\".",
+            "Dar, mai presus de toate, practica și învățământul de Ju-Jutsu au ca scop, ca în toate artele marțiale tradiționale, o dezvoltare fizică și mentală, în spiritul pur al Bushido-ului (武士道), literalmente \"Calea războinicului\".",
             "Bushido este cartea care explică cele 7 principii morale pe care războinicii japonezi (samurai și bushi) trebuiau să le respecte. Dacă am transpune această carte în lumea occidentală, am putea să o considerăm manualul gentlemanului. Și dacă am transpune această carte în România astăzi, am putea să o considerăm Codul bunelor maniere."
           ]
         },
         {
-          "heading": "Pedagogie Ju-Jitsu",
+          "heading": "Pedagogie Ju-Jutsu",
           "body": [
             "Tehnicile de luptă și de apărare sunt adesea imaginile reținute de publicul larg și este normal. Dar acesta este doar vârful iceberg-ului! Ele sunt importante și este esențial să le stăpânim pentru că, din păcate, nimeni nu este ferit de riscul de agresiune.",
-            "Cu toate acestea, dacă, în Evul Mediu, acestea au fost scopul practicii Ju-Jitsu, au devenit, în epoca noastră modernă, mai mult un sprijin pentru dezvoltarea fizică și mentală a individului. Acest lucru se materializează printr-o pedagogie foarte prelucrată și adaptată.",
+            "Cu toate acestea, dacă, în Evul Mediu, acestea au fost scopul practicii Ju-Jutsu, au devenit, în epoca noastră modernă, mai mult un sprijin pentru dezvoltarea fizică și mentală a individului. Acest lucru se materializează printr-o pedagogie foarte prelucrată și adaptată.",
             "Durata și intensitatea sesiunilor vor fi diferite pentru fiecare grupă de vârstă: de exemplu, sesiunea copilului durează o oră, în timp ce sesiunea pentru adulți durează o oră și jumătate. Pentru copii, în niciun caz nu se pune problema pentru ei să lucreze tehnici periculoase, cum ar fi lovituri, acțiuni pe articulații, strangulare, proiectări. Pentru grupele 5-7 ani și 7-9 ani, sesiunea va consta în principal din exerciții de activitate fizică care corespund nevoilor lor."
           ]
         }
@@ -498,7 +543,7 @@
         ]
       },
       "sessionStructure": {
-        "title": "O sesiune standard de Ju-Jitsu tradițional",
+        "title": "O sesiune standard de Ju-Jutsu tradițional",
         "intro": "Are un curriculum și o durată care se bazează pe criterii fizice și fiziologice ale studenților și este împărțită în patru părți:",
         "steps": [
           "Salutul — momentul în care atragem atenția studenților asupra pozițiilor care trebuie respectate, dar și asupra importanței igienei (de exemplu: să aibă unghiile întreținute corespunzător pentru a nu răni partenerii).",
@@ -517,7 +562,8 @@
       "tagline": "Educație, disciplină și responsabilitate",
       "summary": "Cursuri structurate profesionist, concepute pentru dezvoltarea reală a capacității de autoapărare în situații cotidiene, sub îndrumarea lui Shihan Mitu Nicolae.",
       "ageGroups": [
-        "Adulți"
+        "Adulți",
+        "Femei, adulte"
       ],
       "locations": [
         "art"
@@ -608,6 +654,69 @@
           "text": "Dacă preferi o abordare mai personalizată, oferim antrenamente individuale adaptate obiectivelor și nevoilor tale."
         }
       ]
+    },
+    {
+      "id": "kobudo",
+      "slug": "kobudo",
+      "name": "Kobudō",
+      "kanji": "古武道",
+      "romaji": "Kobudō",
+      "tone": "#3E2723",
+      "tagline": "Arta armelor tradiționale japoneze",
+      "summary": "Bō, jō, bokken și tantō — armele clasice ale școlilor japoneze, lucrate prin kata și exerciții în pereche. Nu este luptă liberă: distanța, precizia și controlul preced viteza.",
+      "ageGroups": [
+        "Adulți"
+      ],
+      "locations": [
+        "art"
+      ],
+      "leadInstructor": "zacharia-hamzi",
+      "quotes": [],
+      "sections": [
+        {
+          "heading": "Ce este Kobudō",
+          "body": [
+            "Kobudō (古武道, „calea marțială veche”) este numele sub care sunt grupate în Japonia artele clasice cu armă albă: kenjutsu — sabia, jōjutsu — bastonul scurt, bōjutsu — bastonul lung și tantōjutsu — cuțitul. Nu este o disciplină nouă alipită programei, ci componenta de arme care a însoțit dintotdeauna școlile de Aikibudo.",
+            "Lucrul cu arma schimbă felul în care înțelegi tehnica fără armă. Distanța devine măsurabilă și necruțătoare: un pas greșit nu mai înseamnă o priză ratată, ci o lovitură primită. Din acest motiv, armele sunt de secole instrumentul prin care se predau maai — distanța corectă, și zanshin — atenția care nu se stinge după terminarea tehnicii."
+          ]
+        },
+        {
+          "heading": "Cele patru arme",
+          "body": [
+            "Tantō, cuțitul de lemn, este prima armă din programă. Fiind scurt, iartă greșelile de control și permite lucrul apropiat pe tehnici de dezarmare (tantō-dori) care se regăsesc direct în Aikido și Ju-Jutsu.",
+            "Bokken, sabia de lemn, este arma de referință. Din tăietura de bokken derivă majoritatea mișcărilor de mâini din Aikido; suburi — tăieturile repetate — construiesc postura, respirația și axa corpului.",
+            "Jō, bastonul de 127 cm, adaugă schimbările de priză și tranzițiile dintre capetele armei. Este arma cea mai completă tehnic și cea mai potrivită pentru lucrul în pereche.",
+            "Bō, bastonul de 182 cm, vine la final. O pârghie de aproape doi metri cere forță de trunchi și umeri consolidată și un control al vârfului pe care nu îl ai în primii ani de practică."
+          ]
+        },
+        {
+          "heading": "De ce nu se face luptă liberă",
+          "body": [
+            "Kobudō se practică prin kata, suburi și forme în pereche — kumi-tachi, kumi-jō, tantō-dori — cu distanță controlată și fără contact la corp. Nu există sparring liber, nici pentru adulți, nici pentru copii.",
+            "Motivul este simplu și nu ține de tradiție, ci de anatomie. Un bokken în tibie sau în degete rupe. Un bō de 182 cm scăpat lateral ajunge la doi metri distanță, în capul altcuiva. Singurele sisteme care fac contact real cu arma folosesc fie armură completă și shinai de bambus, ca în kendo, fie arme din spumă.",
+            "Cine caută competiție cu arme are nevoie de un sistem construit pentru asta, cu echipament dedicat. Kobudō dă tehnica, precizia și înțelegerea distanței — nu adrenalina meciului."
+          ]
+        }
+      ],
+      "curriculum": {
+        "title": "Progresia pe niveluri",
+        "items": [
+          "Începător — tantō și bokken: kamae (gărzi), suburi, maai (distanța), tantō-dori.",
+          "Intermediar — jō: suburi, kata de bază, kumi-jō în pereche, schimbările de priză.",
+          "Avansat — bō: manevrarea pârghiei lungi, kata, kumi-bō.",
+          "Etichetă de dojo pentru arme: purtare, predare, așezare — reiho."
+        ]
+      },
+      "equipment": {
+        "title": "Echipament necesar",
+        "items": [
+          "Keikogi (kimono) alb și centură.",
+          "Bokken — sabie de lemn. Se poate împrumuta la primele antrenamente.",
+          "Jō — baston de 127 cm, de la nivel intermediar.",
+          "Bō — baston de 182 cm, de la nivel avansat.",
+          "Tantō de lemn sau cauciuc."
+        ]
+      }
     }
   ],
   "instructors": [
@@ -621,13 +730,17 @@
         "ju-jitsu",
         "self-defence"
       ],
-      "specialty": "Aikido, Krav-Maga, Ju-Jitsu",
+      "specialty": "Aikido, Krav-Maga, Ju-Jutsu",
       "ranks": [
-        "6 Dan - Aikido Aikikai",
-        "6 Dan - Ju-Jitsu",
-        "Antrenor Internațional nivel 4 - Pangration",
-        "Instructor Internațional nivel 3 - Krav Maga, Israeli System of Military Self Defence (ISMSD)",
-        "Coregraf de luptă"
+        "6 Dan - Aikido Aikikai,",
+        "6 Dan - Ju-jitsu,",
+        "Antrenor International - nivel 4 - Pangration,",
+        "Instructor International nivel 3 - Krav Maga - Israeli Sistem of Military Self Defance - ISMSD,",
+        "Coregraf de lupta,",
+        "Instructor SSI - Scuba Diving,",
+        "Instructor Tir - IPSC Range Officer,",
+        "Instructor Ski + Snowboard,",
+        "Instructor Alpinism si Catarare."
       ],
       "bio": null,
       "bioTruncated": true,
@@ -652,12 +765,16 @@
       "disciplines": [
         "ju-jitsu"
       ],
-      "specialty": "Ju-Jitsu",
+      "specialty": "Ju-Jutsu",
       "ranks": [
-        "5 Dan - World Ju Jitsu Federation",
-        "3 Dan - Académie Européenne de Ju Jitsu Traditionnel (Méthode Wa Jutsu)"
+        "5 Dan (Godan) — 五段 : World Ju Jitsu Federation",
+        "5 Dan (Godan) — 五段 : Federatia Romana de Arte Martiale - FRAM",
+        "3 Dan (Sandan) — 三段 : Academie Européenne de Ju Jutsu Traditionnel (Méthode Wa Jutsu)",
+        "Brevet d'enseignement du Ju Jutsu Traditionnel (Méthode Wa Jutsu) — Academie Européenne de Ju Jutsu Traditionnel (Méthode Wa Jutsu)",
+        "Antrenor - Absolvent — C.N.F.P.A. (Centrul Național de Formare și Perfecționare a Antrenorilor) — Specializarea Arte Martiale — Ju Jutsu",
+        "Expert Teacher - Bronze — E.T.S.I.A. (Education Through Sport Instructors Association) — Ju Jutsu"
       ],
-      "bio": "5 Dan - World Ju Jitsu Federation. 3 Dan - Académie Européenne de Ju Jitsu Traditionnel (Méthode Wa Jutsu). Brevet…",
+      "bio": "Instructori cu experiență internațională și vechime.",
       "bioTruncated": true,
       "phone": "0722 506 418",
       "whatsapp": true,
@@ -685,7 +802,7 @@
         "3 Dan Aikido Aikikai",
         "Dojo Cho - Itsushin Dojo"
       ],
-      "bio": "Practicant de Aikido din anul 2011 (în prealabil, practicant și de Judo)…",
+      "bio": "Practicant de Aikido din anul 2011 (in prealabil, practicant si de Judo). Formator certificat, lector autorizat",
       "bioTruncated": true,
       "phone": "0723 548 012",
       "whatsapp": true,
@@ -747,13 +864,22 @@
       "disciplines": [
         "aikido",
         "combat-mma",
-        "self-defence"
+        "self-defence",
+        "kobudo"
       ],
       "specialty": "MMA, Aikido, Pangration",
       "ranks": [
-        "Sensei Aikido - 1 Dan Aikido (Aikikai), activ din 2017",
+        "Sensei Aikido - 1 Dan Aikido (Aikikai) activ din 2017)",
         "Instructor - 1 Dan Ju-Jitsu (FRAM)",
-        "Antrenor - Pangration Athlima"
+        "Antrenor - Pangration Athlima (din 2023)",
+        "Antrenor - MMA (din 2023)",
+        "Preparator fizic — formare CNFPA (Centrul Național de Formare Profesională a Antrenorilor)",
+        "Dive Master — Scuba Schools International (SSI)",
+        "Mental Coach (rol / competență în coaching mental pentru sportivi)",
+        "1× Campion European — Pangration Athlima ",
+        "3× Campion Național — Pangration",
+        "1× Campion Balcanic — World Pangration Athlima Federation",
+        "1× Campion Național Ju-Jitsu (Semicontact)"
       ],
       "bio": null,
       "bioTruncated": true,
@@ -939,7 +1065,7 @@
       "day": 1,
       "start": "17:00",
       "end": "18:00",
-      "className": "Ju-Jitsu copii",
+      "className": "Ju-Jutsu copii",
       "ageGroup": "2-5 ani",
       "instructorId": "bruno-demaille"
     },
@@ -949,8 +1075,8 @@
       "disciplineId": "ju-jitsu",
       "day": 1,
       "start": "18:10",
-      "end": "19:20",
-      "className": "Ju-Jitsu copii",
+      "end": "19:00",
+      "className": "Ju-Jutsu copii",
       "ageGroup": "6-13 ani",
       "instructorId": "bruno-demaille"
     },
@@ -961,7 +1087,7 @@
       "day": 1,
       "start": "19:20",
       "end": "20:20",
-      "className": "Ju-Jitsu adulți",
+      "className": "Ju-Jutsu adulți",
       "ageGroup": "Adulți",
       "instructorId": "bruno-demaille"
     },
@@ -972,7 +1098,7 @@
       "day": 3,
       "start": "17:00",
       "end": "18:00",
-      "className": "Ju-Jitsu copii",
+      "className": "Ju-Jutsu copii",
       "ageGroup": "2-5 ani",
       "instructorId": "bruno-demaille"
     },
@@ -983,7 +1109,7 @@
       "day": 3,
       "start": "18:10",
       "end": "19:10",
-      "className": "Ju-Jitsu copii",
+      "className": "Ju-Jutsu copii",
       "ageGroup": "6-13 ani",
       "instructorId": "bruno-demaille"
     },
@@ -994,7 +1120,7 @@
       "day": 3,
       "start": "19:20",
       "end": "20:20",
-      "className": "Ju-Jitsu adulți",
+      "className": "Ju-Jutsu adulți",
       "ageGroup": "Adulți",
       "instructorId": "bruno-demaille"
     },
@@ -1005,7 +1131,7 @@
       "day": 6,
       "start": "10:00",
       "end": "11:00",
-      "className": "Ju-Jitsu copii",
+      "className": "Ju-Jutsu copii",
       "ageGroup": "2-5 ani",
       "instructorId": "bruno-demaille"
     },
@@ -1016,7 +1142,7 @@
       "day": 6,
       "start": "11:30",
       "end": "12:30",
-      "className": "Ju-Jitsu copii",
+      "className": "Ju-Jutsu copii",
       "ageGroup": "6-13 ani",
       "instructorId": "bruno-demaille"
     },
@@ -1027,7 +1153,7 @@
       "day": 6,
       "start": "13:00",
       "end": "14:00",
-      "className": "Ju-Jitsu adulți",
+      "className": "Ju-Jutsu adulți",
       "ageGroup": "Adulți",
       "instructorId": "bruno-demaille"
     },
@@ -1038,7 +1164,7 @@
       "day": 6,
       "start": "15:00",
       "end": "16:00",
-      "className": "Ju-Jitsu copii",
+      "className": "Ju-Jutsu copii",
       "ageGroup": "2-5 ani",
       "instructorId": "bruno-demaille"
     },
@@ -1239,6 +1365,83 @@
       "className": "Aikido",
       "ageGroup": "9-14 ani",
       "instructorId": "codruta-stefan"
+    },
+    {
+      "id": "art-self-defence-mon-2030",
+      "locationId": "art",
+      "disciplineId": "self-defence",
+      "day": 1,
+      "start": "20:30",
+      "end": "21:30",
+      "className": "Lady Self Defence",
+      "ageGroup": "Femei, adulte",
+      "instructorId": "zacharia-hamzi"
+    },
+    {
+      "id": "art-self-defence-wed-2030",
+      "locationId": "art",
+      "disciplineId": "self-defence",
+      "day": 3,
+      "start": "20:30",
+      "end": "21:30",
+      "className": "Lady Self Defence",
+      "ageGroup": "Femei, adulte",
+      "instructorId": "zacharia-hamzi"
+    },
+    {
+      "id": "art-kobudo-fri-2040",
+      "locationId": "art",
+      "disciplineId": "kobudo",
+      "day": 5,
+      "start": "20:30",
+      "end": "21:30",
+      "className": "Kobudō (Arme)",
+      "ageGroup": "Adulți",
+      "instructorId": "zacharia-hamzi"
+    },
+    {
+      "id": "art-aikido-mon-1800",
+      "locationId": "art",
+      "disciplineId": "kobudo",
+      "day": 6,
+      "start": "17:00",
+      "end": "18:00",
+      "className": "Kobudō (Arme)",
+      "ageGroup": "Adulți",
+      "instructorId": "zacharia-hamzi"
+    },
+    {
+      "id": "art-aikido-mon-1800-2",
+      "locationId": "art",
+      "disciplineId": "aikido",
+      "day": 5,
+      "start": "17:00",
+      "end": "18:00",
+      "className": "Aikido",
+      "ageGroup": "5-7 ani",
+      "instructorId": "zacharia-hamzi"
+    },
+    {
+      "id": "art-aikido-mon-1800-3",
+      "locationId": "art",
+      "disciplineId": "aikido",
+      "day": 5,
+      "start": "18:10",
+      "end": "19:10",
+      "className": "Aikido",
+      "ageGroup": "7-14 ani",
+      "instructorId": "mitu-nicolae"
+    },
+    {
+      "id": "art-self-defence-sat-1600",
+      "locationId": "art",
+      "disciplineId": "self-defence",
+      "day": 6,
+      "start": "16:00",
+      "end": "17:00",
+      "className": "Lady Self Defence",
+      "ageGroup": "Femei, adulte",
+      "instructorId": "zacharia-hamzi"
     }
   ],
   "pricing": [
@@ -1256,8 +1459,8 @@
           "disciplines": null,
           "features": [
             "1 antrenament / săptămână",
-            "Aikido / Ju-Jitsu / KickBox",
-            "Karate / Self Defence / Judo",
+            "Aikido / Ju-Jutsu / MMA",
+            "Kobudō / Self Defence",
             "Max 15 participanți"
           ]
         },
@@ -1269,8 +1472,8 @@
           "popular": false,
           "features": [
             "2 antrenamente / săptămână",
-            "Aikido / Ju-Jitsu / KickBox",
-            "Karate / Self Defence / Judo",
+            "Aikido / Ju-Jutsu / MMA",
+            "Kobudō / Self Defence",
             "Max 15 participanți"
           ],
           "disciplines": null
@@ -1283,8 +1486,8 @@
           "popular": true,
           "features": [
             "3 antrenamente / săptămână",
-            "Aikido / Ju-Jitsu / KickBox",
-            "Karate / Self Defence / Judo",
+            "Aikido / Ju-Jutsu / MMA",
+            "Kobudō / Self Defence",
             "Max 15 participanți"
           ],
           "disciplines": null
@@ -1297,8 +1500,8 @@
           "popular": false,
           "features": [
             "4 antrenamente / săptămână",
-            "Aikido / Ju-Jitsu / KickBox",
-            "Karate / Self Defence / Judo",
+            "Aikido / Ju-Jutsu / MMA",
+            "Kobudō / Self Defence",
             "Max 15 participanți"
           ],
           "disciplines": null
@@ -1317,7 +1520,7 @@
         },
         {
           "id": "art-bebe",
-          "name": "Bebe Jujitsu",
+          "name": "Bebe Jujutsu",
           "price": 500,
           "period": "lună",
           "popular": false,
@@ -1349,6 +1552,7 @@
           "popular": false,
           "features": [
             "Două antrenamente / săptămână",
+            "Aikido",
             "5-16 ani"
           ],
           "disciplines": null
@@ -1361,6 +1565,7 @@
           "popular": false,
           "features": [
             "Două antrenamente / săptămână",
+            "Aikido",
             "+ 1 antrenament Arme sâmbăta"
           ],
           "disciplines": null
@@ -1380,7 +1585,8 @@
           "period": "lună",
           "popular": true,
           "features": [
-            "2 ședințe / săptămână"
+            "2 ședințe / săptămână",
+            "Aikido"
           ],
           "disciplines": null
         },
@@ -1391,7 +1597,8 @@
           "period": "lună",
           "popular": false,
           "features": [
-            "1 ședință / săptămână"
+            "1 ședință / săptămână",
+            "Aikido"
           ],
           "disciplines": null
         }

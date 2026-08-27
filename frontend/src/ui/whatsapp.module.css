@@ -56,3 +56,105 @@
   width: 17px;
   height: 17px;
 }
+
+/* --- Floating button, every page --- */
+
+.fab {
+  --wa: #25d366;
+  --wa-dark: #1da851;
+
+  position: fixed;
+  right: clamp(0.9rem, 2.5vw, 1.5rem);
+  bottom: clamp(0.9rem, 2.5vw, 1.5rem);
+  /* Above the sticky header, below the mobile menu (150) and modals (200). */
+  z-index: 130;
+
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--wa);
+  color: #fff;
+  box-shadow: 0 6px 20px -6px rgba(20, 17, 16, 0.45);
+  transition: transform 0.16s var(--ease), background 0.16s var(--ease);
+}
+
+.fab:hover {
+  background: var(--wa-dark);
+  transform: scale(1.06);
+}
+
+.fab:active {
+  transform: scale(0.98);
+}
+
+.fab:focus-visible {
+  outline: 3px solid var(--wa-dark);
+  outline-offset: 3px;
+}
+
+.fabGlyph {
+  position: relative;
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+}
+
+/* The pulse is a ring expanding out of the button, not the button itself —
+   a target that changes size is hard to hit while it is moving.
+   The site's --ease is an ease-out-quint: it would finish the whole expansion
+   in the first fifth of the cycle and then sit still, which reads as a glitch
+   rather than a pulse. A plain ease-out spreads the motion across the ring's
+   whole visible life. */
+.fabPulse {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: var(--wa);
+  animation: waPulse 2s ease-out infinite;
+}
+
+@keyframes waPulse {
+  0% {
+    opacity: 0.5;
+    transform: scale(1);
+  }
+  75% {
+    opacity: 0;
+    transform: scale(1.85);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1.85);
+  }
+}
+
+/* A glow on the button itself, in the same rhythm. Shadow only, so the hit
+   area never moves. */
+.fab {
+  animation: waGlow 2s ease-out infinite;
+}
+
+@keyframes waGlow {
+  0% {
+    box-shadow: 0 6px 20px -6px rgba(20, 17, 16, 0.45), 0 0 0 0 rgba(37, 211, 102, 0.55);
+  }
+  75% {
+    box-shadow: 0 6px 20px -6px rgba(20, 17, 16, 0.45), 0 0 0 14px rgba(37, 211, 102, 0);
+  }
+  100% {
+    box-shadow: 0 6px 20px -6px rgba(20, 17, 16, 0.45), 0 0 0 0 rgba(37, 211, 102, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fabPulse,
+  .fab {
+    animation: none;
+  }
+
+  .fab:hover {
+    transform: none;
+  }
+}

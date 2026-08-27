@@ -10,8 +10,10 @@ export const telLink = (phone) => `tel:${digitsOnly(phone)}`
  * the desktop app or web.whatsapp.com on a computer, the installed app on a
  * phone, and the relevant app store when the phone has no WhatsApp yet.
  * It needs the number in international form, digits only, without a plus.
+ * An optional `message` pre-fills the chat box, which saves the visitor from
+ * having to work out how to open the conversation.
  */
-export function waLink(phone) {
+export function waLink(phone, message) {
   let digits = digitsOnly(phone)
   if (!digits) return null
 
@@ -19,5 +21,6 @@ export function waLink(phone) {
   else if (digits.startsWith('0')) digits = COUNTRY_CODE + digits.slice(1)
   else if (!digits.startsWith(COUNTRY_CODE)) digits = COUNTRY_CODE + digits
 
-  return `https://wa.me/${digits}`
+  const query = message ? `?text=${encodeURIComponent(message)}` : ''
+  return `https://wa.me/${digits}${query}`
 }

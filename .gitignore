@@ -43,4 +43,6 @@ desktop.ini
 # conținutul site-ului (texte, orar, prețuri). Se editează direct și se
 # publică printr-un commit. La fel documentele din frontend/public/documente/
 # și pozele din frontend/public/instructori/.
->>>>>>> e65e58d (Delete backend and add style elements)
+
+# Rollback copy written by the dev content editor before each save.
+frontend/public/content.json.bak
