@@ -1430,7 +1430,7 @@
       "end": "19:10",
       "className": "Aikido",
       "ageGroup": "7-14 ani",
-      "instructorId": "mitu-nicolae"
+      "instructorId": "zacharia-hamzi"
     },
     {
       "id": "art-self-defence-sat-1600",
@@ -1689,6 +1689,22 @@
         "url": "/documente/ju-jitsu/MEMENTO-JU-JUTSU-TRADITIONAL.pdf",
         "type": "pdf",
         "category": "ju-jitsu"
+      },
+      {
+        "id": "doc-jj-acord-gdpr",
+        "title": "Acord GDPR",
+        "description": "Descărcați și completați acordul privind prelucrarea datelor cu caracter personal, conform Regulamentului (UE) 2016/679.",
+        "url": "/documente/ju-jitsu/formular_gdpr_acs_aikibudo.pdf",
+        "type": "pdf",
+        "category": "ju-jitsu"
+      },
+      {
+        "id": "doc-aikido-acord-gdpr",
+        "title": "Acord GDPR",
+        "description": "Descărcați și completați acordul privind prelucrarea datelor cu caracter personal, conform Regulamentului (UE) 2016/679.",
+        "url": "/documente/aikido/formular_gdpr_acs_aikibudo.pdf",
+        "type": "pdf",
+        "category": "aikido"
       }
     ],
     "links": [
