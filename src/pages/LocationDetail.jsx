@@ -145,7 +145,8 @@ export default function LocationDetail() {
       </Section>
 
       {pricing && plans.length > 0 && (
-        <Section tight alt>
+        // Anchor target: the old site's /preturi/ page redirects straight here.
+        <Section id="preturi" tight alt>
           <Container>
             <SectionHeading
               kicker="Abonamente"

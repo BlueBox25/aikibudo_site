@@ -22,12 +22,42 @@ const DEV_EDIT_STYLE = {
 }
 
 export default function Layout() {
-  const { pathname } = useLocation()
+  const { pathname, hash } = useLocation()
 
-  // Route changes should land at the top of the new page, not mid-scroll.
+  /**
+   * Route changes land at the top of the new page, not mid-scroll — unless the
+   * address carries an anchor, which redirects from the old site rely on.
+   */
   useEffect(() => {
-    window.scrollTo({ top: 0, behavior: 'instant' })
-  }, [pathname])
+    if (!hash) {
+      window.scrollTo({ top: 0, behavior: 'instant' })
+      return undefined
+    }
+
+    // On a cold load the content is still being fetched, so the target does not
+    // exist yet. Keep looking until it appears, then give up rather than hunting
+    // forever for an anchor that is not on this page.
+    //
+    // Timers rather than requestAnimationFrame: rAF does not fire in a
+    // background tab, and a link opened in one would never scroll at all.
+    const deadline = Date.now() + 2000
+    let timer = 0
+
+    const look = () => {
+      const target = document.getElementById(hash.slice(1))
+      if (target) {
+        target.scrollIntoView({ behavior: 'instant', block: 'start' })
+        return
+      }
+      if (Date.now() < deadline) timer = setTimeout(look, 50)
+      // An anchor that never turns up — a stale link, a renamed section — should
+      // still leave the reader at the top of the page, not mid-way down it.
+      else window.scrollTo({ top: 0, behavior: 'instant' })
+    }
+
+    look()
+    return () => clearTimeout(timer)
+  }, [pathname, hash])
 
   return (
     <div className={styles.shell}>

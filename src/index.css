@@ -177,3 +177,9 @@ ol {
 .skip-link:focus {
   top: 0.5rem;
 }
+
+/* Anchored sections are jumped to from redirects off the old site; without this
+   the sticky header would cover the first lines of the section. */
+section[id] {
+  scroll-margin-top: 5.5rem;
+}
