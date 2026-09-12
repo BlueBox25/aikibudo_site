@@ -306,7 +306,7 @@
         {
           "heading": "Ce este Aikido",
           "body": [
-            "AIKIDO este o artă marțială japoneză dezvoltată de Morihei Ueshiba (adesea supranumit O-Sensei). La nivel pur fizic este o artă ce include tehnici (proiectări și luxări) derivate din Jujutsu și Kenjutsu. Aikido nu are ca scop lovirea oponenților cu pumnul sau cu piciorul ci mai degrabă folosirea energiei atacatorilor pentru a obține controlul asupra lor prin imobilizare sau pentru a-i proiecta la distanță. Aikido-ul pune accent pe mișcare și pe dinamica posturii."
+            "AIKIDO este o artă marțială japoneză dezvoltată de Morihei Ueshiba ( O-Sensei). La nivel pur fizic este o artă ce include tehnici (proiectări și luxări) derivate din Daitō-ryū Aiki-Jujutsu și Kenjutsu, Karate, Judo si Jujitsu. Aikido nu are ca scop lovirea oponenților cu pumnul sau cu piciorul ci mai degrabă folosirea energiei atacatorilor pentru a obține controlul asupra lor prin imobilizare sau pentru a-i proiecta la distanță. Aikido-ul pune accent pe mișcare și pe dinamica posturii."
           ]
         },
         {
@@ -1213,12 +1213,12 @@
       "instructorId": "zacharia-hamzi"
     },
     {
-      "id": "art-mma-fri-1920",
+      "id": "art-mma-fri-2030",
       "locationId": "art",
       "disciplineId": "combat-mma",
       "day": 5,
-      "start": "19:20",
-      "end": "20:30",
+      "start": "20:30",
+      "end": "21:30",
       "className": "Pankration-MMA",
       "ageGroup": "Adulți",
       "instructorId": "zacharia-hamzi"
@@ -1389,17 +1389,6 @@
       "instructorId": "zacharia-hamzi"
     },
     {
-      "id": "art-kobudo-fri-2040",
-      "locationId": "art",
-      "disciplineId": "kobudo",
-      "day": 5,
-      "start": "20:30",
-      "end": "21:30",
-      "className": "Kobudō (Arme)",
-      "ageGroup": "Adulți",
-      "instructorId": "zacharia-hamzi"
-    },
-    {
       "id": "art-aikido-mon-1800",
       "locationId": "art",
       "disciplineId": "kobudo",
@@ -1433,12 +1422,12 @@
       "instructorId": "zacharia-hamzi"
     },
     {
-      "id": "art-self-defence-sat-1600",
+      "id": "art-self-defence-fri-1920",
       "locationId": "art",
       "disciplineId": "self-defence",
-      "day": 6,
-      "start": "16:00",
-      "end": "17:00",
+      "day": 5,
+      "start": "19:20",
+      "end": "20:20",
       "className": "Lady Self Defence",
       "ageGroup": "Femei, adulte",
       "instructorId": "zacharia-hamzi"
