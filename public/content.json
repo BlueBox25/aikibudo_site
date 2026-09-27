@@ -504,6 +504,11 @@
       "bushido": {
         "title": "Cele 7 principii morale ale Bushido",
         "kanji": "武士道",
+        "intro": [
+          "Bushidō (武士道) înseamnă literal „calea războinicului\". Este codul de conduită al clasei militare japoneze, închegat din elemente budiste, shintoiste și confucianiste. Nu a fost niciodată o lege scrisă, ci un set de exigențe pe care războinicul și le impunea singur — și după care era judecat de ceilalți.",
+          "Forma în care e predat astăzi, cele șapte principii de mai jos, a fost fixată abia la începutul secolului XX. Asta nu-l face mai puțin folositor: un cod nu valorează prin vechime, ci prin ce cere de la tine.",
+          "Pentru un practicant, partea importantă e următoarea. Tehnica o poate învăța oricine, inclusiv cineva care o va folosi prost. Codul hotărăște ce faci cu ea. De aici vin salutul la intrarea pe tatami, grija față de partener și stăpânirea de sine cerute înaintea oricărei proiectări corecte."
+        ],
         "virtues": [
           {
             "romaji": "Gi",
@@ -785,6 +790,10 @@
         {
           "platform": "linkedin",
           "url": "https://www.linkedin.com/in/bruno-demaille-025a9b11b/"
+        },
+        {
+          "platform": "facebook",
+          "url": "https://www.facebook.com/profile.php?id=61591278826046"
         }
       ],
       "photo": "/instructori/shihan_demaille_bruno.jpeg"
@@ -926,9 +935,9 @@
     },
     {
       "id": "ion-alexandru",
-      "name": "Ion Ion Alexandru",
+      "name": "Ion-Alexandru Ion",
       "title": "Sensei",
-      "displayName": "Sensei Ion Ion Alexandru",
+      "displayName": "Sensei Ion-Alexandru Ion",
       "disciplines": [
         "aikido"
       ],

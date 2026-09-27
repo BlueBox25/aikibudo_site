@@ -111,6 +111,16 @@ export default function DisciplineArticle({ discipline }) {
 
           {bushido && (
             <AccordionItem title={bushido.title}>
+              {bushido.intro && (
+                <Prose>
+                  {bushido.kanji && (
+                    <p className={styles.bushidoKanji} aria-hidden="true">{bushido.kanji}</p>
+                  )}
+                  {bushido.intro.map((paragraph) => (
+                    <p key={paragraph.slice(0, 48)}>{paragraph}</p>
+                  ))}
+                </Prose>
+              )}
               <div className={styles.virtues}>
                 {bushido.virtues.map((virtue) => (
                   <div key={virtue.romaji} className={styles.virtue}>
