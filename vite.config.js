@@ -3,6 +3,7 @@ import { fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { docHash } from './src/admin/docHash.js'
+import { emitStaticPages } from './build/seo.js'
 
 const CONTENT_PATH = fileURLToPath(new URL('./public/content.json', import.meta.url))
 const UPLOAD_DIR = fileURLToPath(new URL('./public/imagini/', import.meta.url))
@@ -136,8 +137,28 @@ function contentWriter() {
   }
 }
 
+/**
+ * After the bundle is written, replace the single empty index.html with one
+ * real HTML file per route, and emit robots.txt and sitemap.xml.
+ */
+function staticSeo() {
+  return {
+    name: 'aikibudo-static-seo',
+    apply: 'build',
+    async closeBundle() {
+      const dist = fileURLToPath(new URL('./dist/', import.meta.url))
+      const [template, content] = await Promise.all([
+        readFile(`${dist}index.html`, 'utf8'),
+        readFile(CONTENT_PATH, 'utf8').then(JSON.parse),
+      ])
+      const paths = await emitStaticPages({ dist, template, content })
+      this.info(`${paths.length} pagini statice, sitemap.xml și robots.txt`)
+    },
+  }
+}
+
 // Site complet static: conținutul vine din public/content.json,
 // deci nu mai există niciun proxy către un API.
 export default defineConfig({
-  plugins: [react(), contentWriter()],
+  plugins: [react(), contentWriter(), staticSeo()],
 })
